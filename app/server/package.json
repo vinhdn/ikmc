@@ -1,0 +1,21 @@
+{
+  "name": "ikmc-lop2-api",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "express": "5.1.0",
+    "express-rate-limit": "8.7.0",
+    "helmet": "8.3.0",
+    "zod": "4.6.5"
+  }
+}

@@ -1,2 +1,11 @@
 .ssh.md
-app/node_modules
+.DS_Store
+node_modules/
+app/node_modules/
+app/server/node_modules/
+app/dist/
+*.tsbuildinfo
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+/exams/

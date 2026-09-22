@@ -1,102 +1,135 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { createExam, saveExamAnswers, submitExam, type ExamSession, type ServerScoreResult } from '../api';
 import type { AnswerMap, OptionKey, Question } from '../types';
 import QuestionCard from '../components/QuestionCard';
 import { formatTime, useCountdown } from '../components/useCountdown';
 
-const EXAM_SECONDS = 75 * 60;
-
 interface Props {
-  questions: Question[];
-  onSubmit: (answers: AnswerMap) => void;
+  onComplete: (questions: Question[], answers: AnswerMap, result: ServerScoreResult) => void;
   onQuit: () => void;
 }
 
-export default function ExamScreen({ questions, onSubmit, onQuit }: Props) {
+export default function ExamScreen({ onComplete, onQuit }: Props) {
+  const [session, setSession] = useState<ExamSession | null>(null);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<AnswerMap>({});
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+  const started = useRef(false);
+  const submitted = useRef(false);
 
-  const remaining = useCountdown(EXAM_SECONDS, true, () => onSubmit(answers));
-  const current = questions[index];
-  const answeredCount = Object.values(answers).filter(Boolean).length;
+  useEffect(() => {
+    if (started.current) return;
+    started.current = true;
+    createExam()
+      .then(setSession)
+      .catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Không tạo được đề thi.'))
+      .finally(() => setLoading(false));
+  }, []);
 
-  const select = (key: OptionKey) => {
-    setAnswers((prev) => ({
-      ...prev,
-      // Bấm lại lựa chọn đang chọn = bỏ chọn.
-      [current.id]: prev[current.id] === key ? undefined : key,
-    }));
+  const handleSubmit = async (askConfirmation: boolean) => {
+    if (!session || submitting || submitted.current) return;
+    if (askConfirmation && !confirm('Bé chắc chắn muốn nộp bài chứ?')) return;
+    submitted.current = true;
+    setSubmitting(true);
+    setError('');
+    try {
+      const result = await submitExam(session, answers);
+      onComplete(session.questions, answers, result);
+    } catch (reason) {
+      submitted.current = false;
+      setError(reason instanceof Error ? reason.message : 'Không nộp được bài thi.');
+      setSubmitting(false);
+    }
   };
 
-  const isLast = index === questions.length - 1;
+  const remaining = useCountdown(
+    session?.durationSeconds ?? 75 * 60,
+    Boolean(session) && !submitting,
+    () => void handleSubmit(false),
+  );
 
-  const handleNext = () => {
-    if (isLast) {
-      if (confirm('Bé chắc chắn muốn nộp bài chứ?')) onSubmit(answers);
-    } else {
-      setIndex((i) => i + 1);
-    }
+  if (loading) {
+    return <div className="card center"><div className="library-status">🦘</div><h2>Đang tạo đề từ ngân hàng câu hỏi…</h2></div>;
+  }
+
+  if (error && !session) {
+    return (
+      <div className="card center">
+        <div className="library-status">⚠️</div>
+        <h2>Không thể tạo đề thi</h2>
+        <p className="practice-subtitle">{error}</p>
+        <button type="button" className="btn btn-prev mt" onClick={onQuit}>Về trang chủ</button>
+      </div>
+    );
+  }
+
+  if (!session) return null;
+  const current = session.questions[index];
+  const answeredCount = Object.values(answers).filter(Boolean).length;
+  const isLast = index === session.questions.length - 1;
+
+  const select = (key: OptionKey) => {
+    const next = {
+      ...answers,
+      [current.id]: answers[current.id] === key ? undefined : key,
+    };
+    setAnswers(next);
+    saveExamAnswers(session, next).catch((reason: unknown) => {
+      setError(reason instanceof Error ? `Chưa lưu được đáp án: ${reason.message}` : 'Chưa lưu được đáp án.');
+    });
   };
 
   return (
     <>
       <header className="app-header">
         <div className="title-block">
-          <span className="badge">IKMC Level 1 · Lớp 2</span>
-          <h1>Đề thi thử</h1>
+          <span className="badge">IKMC Lớp 1–2 · dữ liệu thật</span>
+          <h1>Đề thi thử · 24 câu</h1>
         </div>
-        <div className={`timer${remaining <= 60 ? ' warn' : ''}`}>
-          {formatTime(remaining)}
-        </div>
+        <div className={`timer${remaining <= 60 ? ' warn' : ''}`}>{formatTime(remaining)}</div>
       </header>
 
+      {error && <div className="api-error">⚠️ {error}</div>}
       <QuestionCard
         question={current}
         index={index}
-        total={questions.length}
+        total={session.questions.length}
         selected={answers[current.id]}
         onSelect={select}
       />
 
       <div className="actions">
-        <button
-          type="button"
-          className="btn btn-prev"
-          disabled={index === 0}
-          onClick={() => setIndex((i) => i - 1)}
-        >
+        <button type="button" className="btn btn-prev" disabled={index === 0 || submitting} onClick={() => setIndex((value) => value - 1)}>
           ← Quay lại
         </button>
         <button
           type="button"
           className={`btn ${isLast ? 'btn-submit' : 'btn-next'}`}
-          onClick={handleNext}
+          disabled={submitting}
+          onClick={() => isLast ? void handleSubmit(true) : setIndex((value) => value + 1)}
         >
-          {isLast ? '✅ Nộp bài' : 'Câu tiếp →'}
+          {submitting ? 'Đang chấm…' : isLast ? '✅ Nộp bài' : 'Câu tiếp →'}
         </button>
       </div>
 
       <div className="card">
-        <p className="center" style={{ fontWeight: 800, color: 'var(--muted)' }}>
-          Đã làm {answeredCount} / {questions.length} câu
-        </p>
+        <p className="center exam-save-status">Đã lưu {answeredCount} / {session.questions.length} câu</p>
         <div className="dots">
-          {questions.map((q, i) => (
+          {session.questions.map((question, questionIndex) => (
             <button
-              key={q.id}
+              key={question.id}
               type="button"
-              className={
-                'dot' +
-                (answers[q.id] ? ' answered' : '') +
-                (i === index ? ' current' : '')
-              }
-              onClick={() => setIndex(i)}
+              className={`dot${answers[question.id] ? ' answered' : ''}${questionIndex === index ? ' current' : ''}`}
+              onClick={() => setIndex(questionIndex)}
             >
-              {i + 1}
+              {questionIndex + 1}
             </button>
           ))}
         </div>
         <div className="center mt">
-          <button type="button" className="link-btn" onClick={onQuit}>
+          <button type="button" className="link-btn" onClick={() => confirm('Thoát bài thi? Các đáp án đã chọn vẫn được lưu trên server.') && onQuit()}>
             Thoát bài thi
           </button>
         </div>

@@ -7,8 +7,9 @@ interface Props {
   total: number;
   selected: OptionKey | undefined;
   onSelect: (key: OptionKey) => void;
-  /** Chế độ luyện tập: hiển thị đúng/sai + lời giải ngay. */
   reveal?: boolean;
+  correctOption?: OptionKey;
+  explanation?: string[];
 }
 
 export default function QuestionCard({
@@ -18,14 +19,22 @@ export default function QuestionCard({
   selected,
   onSelect,
   reveal = false,
+  correctOption,
+  explanation,
 }: Props) {
+  const answer = correctOption ?? question.correct;
+  const solution = explanation ?? question.explanation;
+
   return (
     <div className="card">
       <div className="q-topbar">
         <span className="q-index">
           Câu {index + 1} / {total}
+          {question.year && question.sourceQuestionNumber
+            ? ` · Đề ${question.year}, câu ${question.sourceQuestionNumber}`
+            : ''}
         </span>
-        <span style={{ display: 'flex', gap: 8 }}>
+        <span className="q-tags">
           <span className="topic-tag">
             {TOPIC_EMOJI[question.topic]} {TOPIC_LABELS[question.topic]}
           </span>
@@ -34,45 +43,77 @@ export default function QuestionCard({
       </div>
 
       {question.visual && <div className="q-visual">{question.visual}</div>}
-      <div className="q-text">{question.text}</div>
+      {question.imageUrl ? (
+        <>
+          <img className="question-scan" src={question.imageUrl} alt={question.textVi ?? question.text} />
+          <div className="bilingual-question">
+            {question.textVi && (
+              <section className="language-block vi">
+                <span className="language-label">🇻🇳 Tiếng Việt</span>
+                <p>{question.textVi}</p>
+              </section>
+            )}
+            {question.textEn && (
+              <details className="language-block en">
+                <summary>🇬🇧 English · Nguyên văn</summary>
+                <p>{question.textEn}</p>
+              </details>
+            )}
+          </div>
+        </>
+      ) : (
+        <div className="bilingual-question">
+          {question.textVi && (
+            <section className="language-block vi">
+              <span className="language-label">🇻🇳 Tiếng Việt</span>
+              <p>{question.textVi}</p>
+            </section>
+          )}
+          <section className="language-block en">
+            <span className="language-label">🇬🇧 English</span>
+            <p>{question.textEn ?? question.text}</p>
+          </section>
+        </div>
+      )}
 
-      <div className="options-grid">
-        {question.options.map((opt) => {
-          let cls = 'option-btn';
+      <div className="options-grid scan-answer-grid">
+        {question.options.map((option) => {
+          let className = 'option-btn';
           if (reveal) {
-            if (opt.key === question.correct) cls += ' correct';
-            else if (opt.key === selected) cls += ' wrong';
-          } else if (selected === opt.key) {
-            cls += ' selected';
+            if (option.key === answer) className += ' correct';
+            else if (option.key === selected) className += ' wrong';
+          } else if (selected === option.key) {
+            className += ' selected';
           }
           return (
             <button
-              key={opt.key}
+              key={option.key}
               type="button"
-              className={cls}
+              className={className}
               disabled={reveal}
-              onClick={() => onSelect(opt.key)}
+              onClick={() => onSelect(option.key)}
             >
-              <span className="opt-circle">{opt.key}</span>
-              <span>{opt.text}</span>
+              <span className="opt-circle">{option.key}</span>
+              <span>{option.text}</span>
+              {option.imageUrl && <img src={option.imageUrl} alt={`Phương án ${option.key}`} />}
             </button>
           );
         })}
       </div>
 
-      {reveal && (
+      {reveal && answer && (
         <>
           <div className="explanation-box">
-            <h4>💡 Hướng dẫn giải</h4>
-            <ol>
-              {question.explanation.map((step, i) => (
-                <li key={i}>{step}</li>
-              ))}
-            </ol>
+            <h4>✅ Đáp án đã xác minh: {answer}</h4>
+            {solution.length > 0 ? (
+              <ol>
+                {solution.map((step, index) => <li key={index}>{step}</li>)}
+              </ol>
+            ) : (
+              <p>Đáp án được đối chiếu từ khóa đáp án chính thức của kỳ thi.</p>
+            )}
           </div>
-          {question.takeaway && (
-            <div className="takeaway">🌟 Mẹo: {question.takeaway}</div>
-          )}
+          {question.takeaway && <div className="takeaway">🌟 Mẹo: {question.takeaway}</div>}
         </>
       )}
     </div>

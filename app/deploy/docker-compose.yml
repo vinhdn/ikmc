@@ -1,8 +1,30 @@
 name: ikmc-lop2
 
 services:
+  api:
+    image: ikmc-lop2-api:2.1.0
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    container_name: ikmc-lop2-api
+    restart: unless-stopped
+    read_only: true
+    user: "1000:1000"
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      DB_PATH: /data/ikmc.sqlite
+    volumes:
+      - ikmc-data:/data
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=32m,mode=1777
+    networks:
+      - app-network
+
   web:
-    image: ikmc-lop2:1.0.0
+    image: ikmc-lop2:2.1.0
     build:
       context: ..
       dockerfile: Dockerfile
@@ -12,21 +34,23 @@ services:
     user: "101:101"
     security_opt:
       - no-new-privileges:true
+    depends_on:
+      api:
+        condition: service_healthy
     tmpfs:
       - /tmp:rw,noexec,nosuid,size=16m,mode=1777
       - /var/cache/nginx:rw,noexec,nosuid,size=16m,mode=1777
     networks:
       - edge-network
+      - app-network
     labels:
       - traefik.enable=true
       - traefik.docker.network=edge-network
       - traefik.http.services.ikmc-lop2.loadbalancer.server.port=8080
-      # HTTPS router
       - traefik.http.routers.ikmc-lop2.rule=Host(`ikmc.22792.me`)
       - traefik.http.routers.ikmc-lop2.entrypoints=websecure
       - traefik.http.routers.ikmc-lop2.tls=true
       - traefik.http.routers.ikmc-lop2.tls.certresolver=letsencrypt
-      # HTTP -> HTTPS redirect
       - traefik.http.routers.ikmc-lop2-http.rule=Host(`ikmc.22792.me`)
       - traefik.http.routers.ikmc-lop2-http.entrypoints=web
       - traefik.http.routers.ikmc-lop2-http.middlewares=ikmc-lop2-https
@@ -36,3 +60,9 @@ services:
 networks:
   edge-network:
     external: true
+  app-network:
+    internal: true
+
+volumes:
+  ikmc-data:
+    name: ikmc-lop2-data

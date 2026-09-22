@@ -13,21 +13,32 @@ export type OptionKey = 'A' | 'B' | 'C' | 'D' | 'E';
 export interface Option {
   key: OptionKey;
   text: string;
+  imageUrl?: string;
 }
 
 export interface Question {
   id: string;
   topic: Topic;
   points: Points;
-  /** Bài toán bằng tiếng Việt, thân thiện với học sinh lớp 2. */
+  /** Văn bản ưu tiên để hỗ trợ fallback. */
   text: string;
-  /** Emoji/biểu tượng minh hoạ trực quan (tùy chọn). */
+  /** Hai bản ngôn ngữ độc lập từ database. */
+  textEn?: string;
+  textVi?: string;
+  /** Emoji/biểu tượng minh hoạ cho câu tự biên soạn cũ. */
   visual?: string;
+  /** Crop nguyên bản của câu hỏi trong đề, gồm cả hình và phương án. */
+  imageUrl?: string;
+  year?: number;
+  sourceQuestionNumber?: number;
+  sourcePage?: number;
+  sourceTitle?: string;
+  sourcePdfUrl?: string;
+  section?: 'A' | 'B' | 'C';
   options: Option[];
-  correct: OptionKey;
-  /** Lời giải từng bước. */
+  /** Chỉ có ở dữ liệu local cũ; API không trả trường này trước khi chấm. */
+  correct?: OptionKey;
   explanation: string[];
-  /** Mẹo/điểm mấu chốt. */
   takeaway?: string;
 }
 
