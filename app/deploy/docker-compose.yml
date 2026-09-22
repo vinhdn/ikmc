@@ -1,0 +1,38 @@
+name: ikmc-lop2
+
+services:
+  web:
+    image: ikmc-lop2:1.0.0
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: ikmc-lop2
+    restart: unless-stopped
+    read_only: true
+    user: "101:101"
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m,mode=1777
+      - /var/cache/nginx:rw,noexec,nosuid,size=16m,mode=1777
+    networks:
+      - edge-network
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=edge-network
+      - traefik.http.services.ikmc-lop2.loadbalancer.server.port=8080
+      # HTTPS router
+      - traefik.http.routers.ikmc-lop2.rule=Host(`ikmc.22792.me`)
+      - traefik.http.routers.ikmc-lop2.entrypoints=websecure
+      - traefik.http.routers.ikmc-lop2.tls=true
+      - traefik.http.routers.ikmc-lop2.tls.certresolver=letsencrypt
+      # HTTP -> HTTPS redirect
+      - traefik.http.routers.ikmc-lop2-http.rule=Host(`ikmc.22792.me`)
+      - traefik.http.routers.ikmc-lop2-http.entrypoints=web
+      - traefik.http.routers.ikmc-lop2-http.middlewares=ikmc-lop2-https
+      - traefik.http.middlewares.ikmc-lop2-https.redirectscheme.scheme=https
+      - traefik.http.middlewares.ikmc-lop2-https.redirectscheme.permanent=true
+
+networks:
+  edge-network:
+    external: true
