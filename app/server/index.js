@@ -12,12 +12,30 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OPTION_KEYS = ['A', 'B', 'C', 'D', 'E'];
 const EXAM_SECONDS = 75 * 60;
 const BASE_SCORE = 24;
+const TEMPLATE_COUNT = 10;
+const SESSION_DAYS = 30;
 
 const answerMapSchema = z.record(z.string().min(1).max(100), z.enum(OPTION_KEYS));
-const examSchema = z.object({ year: z.number().int().min(2000).max(2100).optional() }).strict();
+const examSchema = z.object({
+  year: z.number().int().min(2000).max(2100).optional(),
+  templateId: z.string().min(1).max(100).optional(),
+}).strict().refine((value) => !(value.year && value.templateId), {
+  message: 'Chỉ được chọn một trong hai: năm đề hoặc đề dựng sẵn.',
+});
 const practiceCheckSchema = z.object({
   questionId: z.string().min(1).max(100),
   selectedOption: z.enum(OPTION_KEYS),
+}).strict();
+const usernameSchema = z.string().trim().toLowerCase().min(3).max(40).regex(/^[a-z0-9_.]+$/);
+const passwordSchema = z.string().min(6).max(200);
+const registerSchema = z.object({
+  username: usernameSchema,
+  password: passwordSchema,
+  displayName: z.string().trim().min(1).max(80).optional(),
+}).strict();
+const loginSchema = z.object({
+  username: usernameSchema,
+  password: passwordSchema,
 }).strict();
 
 function parseJson(value, fallback = []) {
@@ -39,6 +57,100 @@ function apiError(status, code, message) {
   return error;
 }
 
+function hashPassword(password) {
+  const salt = crypto.randomBytes(16).toString('hex');
+  const hash = crypto.scryptSync(password, salt, 64).toString('hex');
+  return { hash, salt };
+}
+
+function verifyPassword(password, salt, expectedHash) {
+  const candidate = crypto.scryptSync(password, salt, 64);
+  const expected = Buffer.from(expectedHash, 'hex');
+  return candidate.length === expected.length && crypto.timingSafeEqual(candidate, expected);
+}
+
+function publicUser(row) {
+  return { id: row.id, username: row.username, displayName: row.display_name };
+}
+
+function createSession(db, userId) {
+  const token = crypto.randomBytes(32).toString('base64url');
+  const expiresAt = new Date(Date.now() + SESSION_DAYS * 24 * 60 * 60 * 1000).toISOString();
+  db.prepare('INSERT INTO sessions(token_hash, user_id, expires_at) VALUES (?, ?, ?)').run(tokenHash(token), userId, expiresAt);
+  return { token, expiresAt };
+}
+
+function currentUser(db, request) {
+  const header = request.get('authorization') ?? '';
+  const match = /^Bearer\s+(.+)$/i.exec(header);
+  if (!match) return null;
+  const session = db.prepare('SELECT * FROM sessions WHERE token_hash=?').get(tokenHash(match[1]));
+  if (!session || Date.parse(session.expires_at) < Date.now()) return null;
+  const user = db.prepare('SELECT * FROM users WHERE id=?').get(session.user_id);
+  return user ?? null;
+}
+
+function requireUser(db, request) {
+  const user = currentUser(db, request);
+  if (!user) throw apiError(401, 'AUTH_REQUIRED', 'Vui lòng đăng nhập.');
+  return user;
+}
+
+function mulberry32(seed) {
+  let state = seed >>> 0;
+  return () => {
+    state |= 0;
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function seededShuffle(items, seed) {
+  const random = mulberry32(seed);
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+function seedExamTemplates(db) {
+  const existing = db.prepare('SELECT COUNT(*) AS count FROM exam_templates').get().count;
+  if (existing >= TEMPLATE_COUNT) return;
+  const pools = [3, 4, 5].map((points) => db.prepare(`
+    SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND points=?
+    ORDER BY id
+  `).all(points).map((row) => row.id));
+  if (pools.some((pool) => pool.length < 8)) return;
+
+  const insertTemplate = db.prepare(`
+    INSERT INTO exam_templates(id, slug, title, position) VALUES (?, ?, ?, ?)
+    ON CONFLICT(id) DO NOTHING
+  `);
+  const insertQuestion = db.prepare(`
+    INSERT INTO exam_template_questions(template_id, question_id, position) VALUES (?, ?, ?)
+    ON CONFLICT(template_id, position) DO NOTHING
+  `);
+
+  db.transaction(() => {
+    for (let index = 0; index < TEMPLATE_COUNT; index += 1) {
+      const templateId = `tpl-${String(index + 1).padStart(2, '0')}`;
+      insertTemplate.run(templateId, `de-${index + 1}`, `Đề luyện tập số ${index + 1}`, index + 1);
+      const sections = pools.map((pool) => {
+        const shuffled = seededShuffle(pool, 1000 + index * 7 + pool.length);
+        const start = (index * 8) % shuffled.length;
+        const wrapped = [...shuffled.slice(start), ...shuffled.slice(0, start)];
+        return wrapped.slice(0, 8);
+      });
+      const ordered = sections.flat();
+      ordered.forEach((questionId, position) => insertQuestion.run(templateId, questionId, position + 1));
+    }
+  })();
+}
+
 export function initDatabase(dbPath, { seed = true } = {}) {
   fs.mkdirSync(path.dirname(dbPath), { recursive: true });
   const db = new Database(dbPath);
@@ -47,8 +159,19 @@ export function initDatabase(dbPath, { seed = true } = {}) {
   db.pragma('synchronous = NORMAL');
   db.pragma('busy_timeout = 5000');
 
-  const migration = fs.readFileSync(path.join(__dirname, 'migrations/001_initial.sql'), 'utf8');
-  db.exec(migration);
+  const migrationsDir = path.join(__dirname, 'migrations');
+  const files = fs.readdirSync(migrationsDir).filter((name) => name.endsWith('.sql')).sort();
+  let applied = new Set();
+  try {
+    applied = new Set(db.prepare('SELECT version FROM schema_migrations').all().map((row) => row.version));
+  } catch {
+    // schema_migrations chưa tồn tại ở lần khởi tạo đầu tiên; migration 001 sẽ tạo bảng này.
+  }
+  for (const file of files) {
+    const version = Number.parseInt(file, 10);
+    if (applied.has(version)) continue;
+    db.exec(fs.readFileSync(path.join(migrationsDir, file), 'utf8'));
+  }
   if (seed) seedDatabase(db);
   return db;
 }
@@ -111,6 +234,7 @@ export function seedDatabase(db) {
     }
     for (const row of payload.provenance) provenanceStmt.run(row);
   })();
+  seedExamTemplates(db);
   return payload.summary;
 }
 
@@ -288,10 +412,83 @@ export function createApp(db) {
     });
   });
 
+  app.get('/api/v1/exam-templates', (_request, response) => {
+    const items = db.prepare('SELECT id, title, position FROM exam_templates ORDER BY position').all();
+    response.json({ items });
+  });
+
+  app.post('/api/v1/auth/register', rateLimit({ windowMs: 60_000, limit: 10 }), (request, response) => {
+    const input = registerSchema.parse(request.body ?? {});
+    const existing = db.prepare('SELECT id FROM users WHERE username=?').get(input.username);
+    if (existing) throw apiError(409, 'USERNAME_TAKEN', 'Tên đăng nhập đã được sử dụng.');
+    const { hash, salt } = hashPassword(input.password);
+    const userId = crypto.randomUUID();
+    db.prepare(`
+      INSERT INTO users(id, username, display_name, password_hash, password_salt)
+      VALUES (?, ?, ?, ?, ?)
+    `).run(userId, input.username, input.displayName || input.username, hash, salt);
+    const session = createSession(db, userId);
+    response.status(201).json({ token: session.token, expiresAt: session.expiresAt, user: publicUser({ id: userId, username: input.username, display_name: input.displayName || input.username }) });
+  });
+
+  app.post('/api/v1/auth/login', rateLimit({ windowMs: 60_000, limit: 20 }), (request, response) => {
+    const input = loginSchema.parse(request.body ?? {});
+    const user = db.prepare('SELECT * FROM users WHERE username=?').get(input.username);
+    if (!user || !verifyPassword(input.password, user.password_salt, user.password_hash)) {
+      throw apiError(401, 'INVALID_CREDENTIALS', 'Tên đăng nhập hoặc mật khẩu không đúng.');
+    }
+    const session = createSession(db, user.id);
+    response.json({ token: session.token, expiresAt: session.expiresAt, user: publicUser(user) });
+  });
+
+  app.post('/api/v1/auth/logout', (request, response) => {
+    const header = request.get('authorization') ?? '';
+    const match = /^Bearer\s+(.+)$/i.exec(header);
+    if (match) db.prepare('DELETE FROM sessions WHERE token_hash=?').run(tokenHash(match[1]));
+    response.status(204).end();
+  });
+
+  app.get('/api/v1/auth/me', (request, response) => {
+    const user = requireUser(db, request);
+    response.json({ user: publicUser(user) });
+  });
+
+  app.get('/api/v1/me/attempts', (request, response) => {
+    const user = requireUser(db, request);
+    const rows = db.prepare(`
+      SELECT a.id AS attemptId, a.mode, a.status, a.total_score AS totalScore, a.base_score AS baseScore,
+             a.correct_count AS correctCount, a.wrong_count AS wrongCount, a.skipped_count AS skippedCount,
+             a.started_at AS startedAt, a.expires_at AS expiresAt, a.submitted_at AS submittedAt,
+             t.title AS templateTitle,
+             (SELECT COUNT(*) FROM attempt_questions aq WHERE aq.attempt_id = a.id) AS questionCount,
+             (SELECT SUM(q.points) FROM attempt_questions aq JOIN questions q ON q.id = aq.question_id WHERE aq.attempt_id = a.id) AS pointsSum
+      FROM attempts a LEFT JOIN exam_templates t ON t.id = a.exam_template_id
+      WHERE a.user_id = ? AND a.mode = 'exam'
+      ORDER BY a.started_at DESC
+      LIMIT 100
+    `).all(user.id);
+    response.json({
+      items: rows.map((row) => ({
+        ...row,
+        maxScore: row.pointsSum ? BASE_SCORE + row.pointsSum : null,
+        pointsSum: undefined,
+      })),
+    });
+  });
+
   app.post('/api/v1/exams', rateLimit({ windowMs: 60_000, limit: 20 }), (request, response) => {
     const input = examSchema.parse(request.body ?? {});
+    const user = currentUser(db, request);
     let ids;
-    if (input.year) {
+    let templateId = null;
+    if (input.templateId) {
+      const template = db.prepare('SELECT id FROM exam_templates WHERE id=?').get(input.templateId);
+      if (!template) throw apiError(404, 'TEMPLATE_NOT_FOUND', 'Không tìm thấy đề dựng sẵn.');
+      templateId = template.id;
+      ids = db.prepare(`
+        SELECT question_id AS id FROM exam_template_questions WHERE template_id=? ORDER BY position
+      `).all(templateId);
+    } else if (input.year) {
       ids = db.prepare(`
         SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND year=?
         ORDER BY source_question_number
@@ -309,9 +506,9 @@ export function createApp(db) {
     const expiresAt = new Date(Date.now() + EXAM_SECONDS * 1000).toISOString();
     db.transaction(() => {
       db.prepare(`
-        INSERT INTO attempts(id, mode, status, base_score, expires_at, client_token_hash)
-        VALUES (?, 'exam', 'in_progress', ?, ?, ?)
-      `).run(attemptId, BASE_SCORE, expiresAt, tokenHash(token));
+        INSERT INTO attempts(id, mode, status, base_score, expires_at, client_token_hash, user_id, exam_template_id)
+        VALUES (?, 'exam', 'in_progress', ?, ?, ?, ?, ?)
+      `).run(attemptId, BASE_SCORE, expiresAt, tokenHash(token), user?.id ?? null, templateId);
       const insert = db.prepare('INSERT INTO attempt_questions(attempt_id, question_id, position) VALUES (?, ?, ?)');
       ids.forEach(({ id }, index) => insert.run(attemptId, id, index + 1));
     })();
@@ -347,6 +544,20 @@ export function createApp(db) {
     const answers = answerMapSchema.parse(request.body?.answers ?? {});
     saveAnswers(db, attempt, answers, true);
     response.json({ saved: Object.keys(answers).length });
+  });
+
+  app.post('/api/v1/attempts/:id/resume-token', rateLimit({ windowMs: 60_000, limit: 20 }), (request, response) => {
+    const user = requireUser(db, request);
+    const attempt = db.prepare('SELECT * FROM attempts WHERE id=?').get(request.params.id);
+    if (!attempt) throw apiError(404, 'ATTEMPT_NOT_FOUND', 'Không tìm thấy lượt làm bài.');
+    if (attempt.user_id !== user.id) throw apiError(403, 'FORBIDDEN', 'Bạn không có quyền với lượt làm bài này.');
+    if (attempt.status !== 'in_progress') throw apiError(409, 'ATTEMPT_CLOSED', 'Lượt làm bài đã kết thúc.');
+    if (attempt.expires_at && Date.now() > Date.parse(attempt.expires_at)) {
+      throw apiError(409, 'ATTEMPT_EXPIRED', 'Lượt làm bài đã hết thời gian.');
+    }
+    const token = crypto.randomBytes(32).toString('base64url');
+    db.prepare('UPDATE attempts SET client_token_hash=? WHERE id=?').run(tokenHash(token), attempt.id);
+    response.json({ attemptId: attempt.id, attemptToken: token, expiresAt: attempt.expires_at });
   });
 
   app.post('/api/v1/attempts/:id/submit', rateLimit({ windowMs: 60_000, limit: 20 }), (request, response) => {

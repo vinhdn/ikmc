@@ -1,15 +1,31 @@
 import { useEffect, useRef, useState } from 'react';
-import { createExam, saveExamAnswers, submitExam, type ExamSession, type ServerScoreResult } from '../api';
+import {
+  clearStoredActiveAttempt,
+  createExam,
+  resumeExam,
+  saveExamAnswers,
+  storeActiveAttempt,
+  submitExam,
+  type ExamSession,
+  type ServerScoreResult,
+} from '../api';
 import type { AnswerMap, OptionKey, Question } from '../types';
 import QuestionCard from '../components/QuestionCard';
 import { formatTime, useCountdown } from '../components/useCountdown';
 
+export interface ResumeRequest {
+  attemptId: string;
+  attemptToken: string;
+}
+
 interface Props {
+  templateId?: string;
+  resume?: ResumeRequest;
   onComplete: (questions: Question[], answers: AnswerMap, result: ServerScoreResult) => void;
   onQuit: () => void;
 }
 
-export default function ExamScreen({ onComplete, onQuit }: Props) {
+export default function ExamScreen({ templateId, resume, onComplete, onQuit }: Props) {
   const [session, setSession] = useState<ExamSession | null>(null);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<AnswerMap>({});
@@ -22,11 +38,35 @@ export default function ExamScreen({ onComplete, onQuit }: Props) {
   useEffect(() => {
     if (started.current) return;
     started.current = true;
-    createExam()
+
+    const begin = async () => {
+      if (resume) {
+        const { session: resumed, answers: resumedAnswers } = await resumeExam(resume.attemptId, resume.attemptToken);
+        storeActiveAttempt(resumed);
+        setAnswers(resumedAnswers);
+        return resumed;
+      }
+      const created = await createExam(templateId ? { templateId } : undefined);
+      storeActiveAttempt(created);
+      return created;
+    };
+
+    begin()
       .then(setSession)
       .catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Không tạo được đề thi.'))
       .finally(() => setLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (!session || submitted.current) return;
+    const handler = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    window.addEventListener('beforeunload', handler);
+    return () => window.removeEventListener('beforeunload', handler);
+  }, [session]);
 
   const handleSubmit = async (askConfirmation: boolean) => {
     if (!session || submitting || submitted.current) return;
@@ -36,6 +76,7 @@ export default function ExamScreen({ onComplete, onQuit }: Props) {
     setError('');
     try {
       const result = await submitExam(session, answers);
+      clearStoredActiveAttempt();
       onComplete(session.questions, answers, result);
     } catch (reason) {
       submitted.current = false;
@@ -129,8 +170,12 @@ export default function ExamScreen({ onComplete, onQuit }: Props) {
           ))}
         </div>
         <div className="center mt">
-          <button type="button" className="link-btn" onClick={() => confirm('Thoát bài thi? Các đáp án đã chọn vẫn được lưu trên server.') && onQuit()}>
-            Thoát bài thi
+          <button
+            type="button"
+            className="link-btn"
+            onClick={() => confirm('Thoát bài thi? Đáp án và thời gian đã lưu, bé có thể quay lại làm tiếp bất cứ lúc nào trước khi hết giờ.') && onQuit()}
+          >
+            Thoát bài thi (có thể quay lại)
           </button>
         </div>
       </div>

@@ -1019,3 +1019,134 @@ h3 {
 .language-block p {
   margin: 0;
 }
+
+/* ---------- Auth ---------- */
+.auth-card {
+  max-width: 420px;
+  margin: 0 auto;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+.auth-form label {
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.auth-form input {
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ---------- Resume banner ---------- */
+.resume-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--primary-soft);
+  border: 2px solid var(--primary);
+  flex-wrap: wrap;
+}
+.resume-banner p {
+  color: var(--primary-dark);
+  margin-top: 2px;
+}
+
+/* ---------- Exam picker ---------- */
+.custom-exam-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.custom-exam-card .icon {
+  font-size: 36px;
+}
+.custom-exam-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+}
+.template-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.template-index {
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.template-card h3 {
+  margin: 8px 0 4px;
+  font-size: 17px;
+}
+.template-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* ---------- History ---------- */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.history-item h3 {
+  margin: 4px 0 6px;
+}
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.history-status {
+  font-weight: 800;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.history-status.in_progress {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+}
+.history-status.submitted {
+  background: var(--secondary-soft);
+  color: #2e7d32;
+}
+.history-status.expired {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.history-date {
+  color: var(--muted);
+  font-size: 13px;
+}
+.history-score {
+  color: var(--muted);
+  font-size: 14px;
+}
