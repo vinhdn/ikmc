@@ -23,7 +23,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Any
 
-from PIL import Image, ImageEnhance, ImageOps
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 PDF_DIR = ROOT / "public/exams"
@@ -148,10 +148,13 @@ def render_pages(pdf: Path, pages: set[int], target: Path, scan: bool) -> dict[i
         run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", "180", "-png", "-singlefile", str(pdf), str(prefix)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         image = Image.open(str(prefix) + ".png").convert("RGB")
         if scan and image.width < 1800:
+            # Some official scans embed a low-resolution page image; upscale for
+            # legibility only. Do NOT autocontrast/enhance-contrast here: those ops
+            # are per-channel and visibly distort colors on colorful diagrams (this
+            # is what produced the washed-out/mis-colored 2021 exam crops before it
+            # was caught and fixed by re-rendering without this step).
             scale = 1800 / image.width
             image = image.resize((1800, int(image.height * scale)), Image.Resampling.LANCZOS)
-            image = ImageOps.autocontrast(image, cutoff=1)
-            image = ImageEnhance.Contrast(image).enhance(1.35)
         result[page] = image
     return result
 
@@ -333,7 +336,7 @@ def main() -> None:
                 end = positions.get(q + 1)
                 image = combine_question_image(page_images, positions[q], end)
                 image_path = output_dir / f"q{q:02d}.webp"
-                image.save(image_path, "WEBP", quality=82, method=6)
+                image.save(image_path, "WEBP", quality=88, method=6)
                 raw = ocr_image(image, temp) if scan else page_region_text(doc, positions, q, count)
                 stem, options = parse_options(raw)
                 section, points = question_meta(q, count)
