@@ -61,7 +61,7 @@ export default function PracticeScreen({ onHome }: Props) {
       <div className="card">
         <h2 className="center">📚 Chọn chủ đề luyện tập</h2>
         <p className="center practice-subtitle">
-          Câu hỏi thật từ đề 2014–2022; đáp án được chấm trực tiếp trên máy chủ.
+          Câu hỏi thật từ đề 2014–2023; đáp án được chấm trực tiếp trên máy chủ.
         </p>
         {error && <div className="api-error">⚠️ {error}</div>}
         <div className="topic-grid">

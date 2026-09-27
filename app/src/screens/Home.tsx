@@ -59,7 +59,7 @@ export default function Home({
         </p>
 
         <div className="info-row">
-          <span className="chip">✅ 192 câu đã xác minh</span>
+          <span className="chip">✅ 216 câu đã xác minh</span>
           <span className="chip">⏱️ 75 phút</span>
           <span className="chip">🔒 Chấm điểm server</span>
         </div>
@@ -86,7 +86,7 @@ export default function Home({
           >
             <div className="icon">📚</div>
             <h3>Luyện tập</h3>
-            <p>Luyện câu thật 2014–2022, biết đúng/sai theo khóa đáp án chính thức.</p>
+            <p>Luyện câu thật 2014–2023, biết đúng/sai theo khóa đáp án chính thức.</p>
           </div>
 
           <div
@@ -98,7 +98,7 @@ export default function Home({
           >
             <div className="icon">🗂️</div>
             <h3>Thư viện đề</h3>
-            <p>11 tài liệu, 163 trang và 532 lượt câu hỏi từ năm 2009–2022.</p>
+            <p>12 tài liệu, 171 trang và 556 lượt câu hỏi từ năm 2009–2023.</p>
           </div>
         </div>
       </div>

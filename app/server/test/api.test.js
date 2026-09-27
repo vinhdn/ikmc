@@ -25,12 +25,12 @@ after(async () => {
 });
 
 test('seed imports canonical, published and provenance counts', () => {
-  assert.equal(db.prepare('SELECT COUNT(*) count FROM questions').get().count, 412);
-  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='published' AND answer_verified=1").get().count, 192);
-  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='published' AND TRIM(COALESCE(stem_vi, ''))<>''").get().count, 192);
+  assert.equal(db.prepare('SELECT COUNT(*) count FROM questions').get().count, 436);
+  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='published' AND answer_verified=1").get().count, 216);
+  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='published' AND TRIM(COALESCE(stem_vi, ''))<>''").get().count, 216);
   assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='needs_review'").get().count, 220);
-  assert.equal(db.prepare('SELECT COUNT(*) count FROM question_provenance').get().count, 532);
-  assert.equal(db.prepare('SELECT COUNT(*) count FROM question_options').get().count, 2060);
+  assert.equal(db.prepare('SELECT COUNT(*) count FROM question_provenance').get().count, 556);
+  assert.equal(db.prepare('SELECT COUNT(*) count FROM question_options').get().count, 2180);
 });
 
 test('public practice response never leaks correct answer', async () => {
