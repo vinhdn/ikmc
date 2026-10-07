@@ -2,7 +2,7 @@ name: ikmc-lop2
 
 services:
   api:
-    image: ikmc-lop2-api:2.3.0
+    image: ikmc-lop2-api:2.4.0
     build:
       context: ..
       dockerfile: server/Dockerfile
@@ -24,7 +24,7 @@ services:
       - app-network
 
   web:
-    image: ikmc-lop2:2.3.0
+    image: ikmc-lop2:2.4.0
     build:
       context: ..
       dockerfile: Dockerfile
