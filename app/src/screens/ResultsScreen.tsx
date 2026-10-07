@@ -46,7 +46,9 @@ export default function ResultsScreen({ questions, answers, result, onRestart, o
         </div>
       </div>
 
-      <h3 className="center review-title">📖 Xem lại đáp án chính thức</h3>
+      <h3 className="center review-title">
+        {questions.some((question) => question.origin === 'ai') ? '📖 Xem lại đáp án và hướng dẫn giải' : '📖 Xem lại đáp án chính thức'}
+      </h3>
       {questions.map((question, index) => {
         const review = reviewById.get(question.id);
         const selected = review?.selectedOption ?? answers[question.id];

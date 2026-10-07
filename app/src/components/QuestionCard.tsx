@@ -35,6 +35,7 @@ export default function QuestionCard({
             : ''}
         </span>
         <span className="q-tags">
+          {question.origin === 'ai' && <span className="ai-chip">AI generate</span>}
           <span className="topic-tag">
             {TOPIC_EMOJI[question.topic]} {TOPIC_LABELS[question.topic]}
           </span>
@@ -104,11 +105,14 @@ export default function QuestionCard({
       {reveal && answer && (
         <>
           <div className="explanation-box">
-            <h4>✅ Đáp án đã xác minh: {answer}</h4>
+            <h4>{question.origin === 'ai' ? `✅ Đáp án đúng: ${answer}` : `✅ Đáp án đã xác minh: ${answer}`}</h4>
             {solution.length > 0 ? (
+              <>
+              {question.origin === 'ai' && <p className="solution-label">Hướng dẫn giải:</p>}
               <ol>
                 {solution.map((step, index) => <li key={index}>{step}</li>)}
               </ol>
+              </>
             ) : (
               <p>Đáp án được đối chiếu từ khóa đáp án chính thức của kỳ thi.</p>
             )}

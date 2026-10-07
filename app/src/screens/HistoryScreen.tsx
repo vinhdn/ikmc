@@ -75,7 +75,10 @@ export default function HistoryScreen({ onHome, onResume }: Props) {
                 <span className={`history-status ${item.status}`}>{STATUS_LABELS[item.status]}</span>
                 <span className="history-date">{formatDate(item.startedAt)}</span>
               </div>
-              <h3>{item.templateTitle ?? 'Đề ngẫu nhiên'}</h3>
+              <h3>
+                {item.templateTitle ?? 'Đề ngẫu nhiên'}{' '}
+                {item.templateTag === 'ai_generated' && <span className="ai-chip">AI generate</span>}
+              </h3>
               {item.status === 'in_progress' ? (
                 <>
                   <p>{item.questionCount} câu · đang chờ hoàn thành</p>

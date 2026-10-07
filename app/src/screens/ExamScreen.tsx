@@ -126,7 +126,9 @@ export default function ExamScreen({ templateId, resume, onComplete, onQuit }: P
     <>
       <header className="app-header">
         <div className="title-block">
-          <span className="badge">IKMC Lớp 1–2 · dữ liệu thật</span>
+          <span className="badge">
+            {session.questions.some((question) => question.origin === 'ai') ? 'IKMC Lớp 1–2 · AI generate' : 'IKMC Lớp 1–2 · dữ liệu thật'}
+          </span>
           <h1>Đề thi thử · 24 câu</h1>
         </div>
         <div className={`timer${remaining <= 60 ? ' warn' : ''}`}>{formatTime(remaining)}</div>

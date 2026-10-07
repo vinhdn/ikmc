@@ -35,6 +35,8 @@ export interface Question {
   sourceTitle?: string;
   sourcePdfUrl?: string;
   section?: 'A' | 'B' | 'C';
+  /** 'ai' cho câu hỏi thuộc bộ đề "AI generate". */
+  origin?: 'official' | 'ai';
   options: Option[];
   /** Chỉ có ở dữ liệu local cũ; API không trả trường này trước khi chấm. */
   correct?: OptionKey;

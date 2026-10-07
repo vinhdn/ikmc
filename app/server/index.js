@@ -118,10 +118,10 @@ function seededShuffle(items, seed) {
 }
 
 function seedExamTemplates(db) {
-  const existing = db.prepare('SELECT COUNT(*) AS count FROM exam_templates').get().count;
+  const existing = db.prepare('SELECT COUNT(*) AS count FROM exam_templates WHERE tag IS NULL').get().count;
   if (existing >= TEMPLATE_COUNT) return;
   const pools = [3, 4, 5].map((points) => db.prepare(`
-    SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND points=?
+    SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND origin='official' AND points=?
     ORDER BY id
   `).all(points).map((row) => row.id));
   if (pools.some((pool) => pool.length < 8)) return;
@@ -235,13 +235,74 @@ export function seedDatabase(db) {
     for (const row of payload.provenance) provenanceStmt.run(row);
   })();
   seedExamTemplates(db);
+  seedAiExams(db);
   return payload.summary;
+}
+
+export function seedAiExams(db, file = path.join(__dirname, 'data/ai_exams.seed.json')) {
+  if (!fs.existsSync(file)) return 0;
+  const payload = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const sourceStmt = db.prepare(`
+    INSERT INTO exam_sources
+      (id, slug, title, year, language, kind, source_pdf_url, page_count, question_count, review_status)
+    VALUES
+      (@id, @slug, @title, @year, @language, @kind, @source_pdf_url, @page_count, @question_count, @review_status)
+    ON CONFLICT(id) DO UPDATE SET
+      title=excluded.title, question_count=excluded.question_count, review_status=excluded.review_status,
+      updated_at=CURRENT_TIMESTAMP
+  `);
+  const questionStmt = db.prepare(`
+    INSERT INTO questions
+      (id, canonical_hash, source_id, source_question_number, source_page, year, section, points,
+       topic, stem, stem_vi, image_url, correct_option, explanation_json, status,
+       answer_verified, answer_source, origin)
+    VALUES
+      (@id, @canonical_hash, @source_id, @source_question_number, @source_page, @year, @section,
+       @points, @topic, @stem, @stem_vi, @image_url, @correct_option, @explanation_json,
+       @status, @answer_verified, @answer_source, 'ai')
+    ON CONFLICT(id) DO UPDATE SET
+      section=excluded.section, points=excluded.points, topic=excluded.topic, stem=excluded.stem,
+      stem_vi=excluded.stem_vi, image_url=excluded.image_url, correct_option=excluded.correct_option,
+      explanation_json=excluded.explanation_json, status=excluded.status,
+      answer_verified=excluded.answer_verified, answer_source=excluded.answer_source,
+      origin='ai', updated_at=CURRENT_TIMESTAMP
+  `);
+  const optionStmt = db.prepare(`
+    INSERT INTO question_options (question_id, option_key, option_text, image_url, sort_order)
+    VALUES (@question_id, @key, @text, @image_url, @sort_order)
+    ON CONFLICT(question_id, option_key) DO UPDATE SET
+      option_text=excluded.option_text, image_url=excluded.image_url, sort_order=excluded.sort_order
+  `);
+  const templateStmt = db.prepare(`
+    INSERT INTO exam_templates(id, slug, title, position, tag) VALUES (@id, @slug, @title, @position, @tag)
+    ON CONFLICT(id) DO UPDATE SET slug=excluded.slug, title=excluded.title, position=excluded.position, tag=excluded.tag
+  `);
+  const clearTemplate = db.prepare('DELETE FROM exam_template_questions WHERE template_id=?');
+  const templateQuestionStmt = db.prepare('INSERT INTO exam_template_questions(template_id, question_id, position) VALUES (?, ?, ?)');
+
+  db.transaction(() => {
+    sourceStmt.run(payload.source);
+    for (const question of payload.questions) {
+      questionStmt.run({
+        ...question,
+        explanation_json: JSON.stringify(question.explanation ?? []),
+        answer_verified: question.answer_verified ? 1 : 0,
+      });
+      for (const option of question.options) optionStmt.run({ ...option, question_id: question.id });
+    }
+    for (const template of payload.templates) {
+      templateStmt.run(template);
+      clearTemplate.run(template.id);
+      template.question_ids.forEach((questionId, index) => templateQuestionStmt.run(template.id, questionId, index + 1));
+    }
+  })();
+  return payload.questions.length;
 }
 
 function publicQuestion(db, id) {
   const row = db.prepare(`
     SELECT q.id, q.year, q.source_question_number, q.source_page, q.section, q.points, q.topic,
-           q.stem, q.stem_vi, q.image_url, s.title AS source_title,
+           q.stem, q.stem_vi, q.image_url, q.origin, s.title AS source_title,
            s.source_pdf_url
     FROM questions q JOIN exam_sources s ON s.id=q.source_id
     WHERE q.id=? AND q.status='published' AND q.answer_verified=1
@@ -264,6 +325,7 @@ function publicQuestion(db, id) {
     stem: row.stem,
     stemVi: row.stem_vi,
     imageUrl: row.image_url,
+    origin: row.origin,
     options,
   };
 }
@@ -340,7 +402,7 @@ export function createApp(db) {
   app.use('/api', rateLimit({ windowMs: 60_000, limit: 300, standardHeaders: 'draft-8', legacyHeaders: false }));
 
   app.get('/healthz', (_request, response) => {
-    const row = db.prepare("SELECT COUNT(*) AS count FROM questions WHERE status='published' AND answer_verified=1").get();
+    const row = db.prepare("SELECT COUNT(*) AS count FROM questions WHERE status='published' AND answer_verified=1 AND origin='official'").get();
     response.json({ status: 'ok', database: 'ok', publishedQuestions: row.count });
   });
 
@@ -349,15 +411,15 @@ export function createApp(db) {
       SELECT COUNT(*) AS canonical_questions,
              SUM(CASE WHEN status='published' AND answer_verified=1 THEN 1 ELSE 0 END) AS published_questions,
              SUM(CASE WHEN status='needs_review' THEN 1 ELSE 0 END) AS needs_review
-      FROM questions
+      FROM questions WHERE origin='official'
     `).get();
     const topics = db.prepare(`
       SELECT topic, COUNT(*) AS count FROM questions
-      WHERE status='published' AND answer_verified=1 GROUP BY topic ORDER BY topic
+      WHERE status='published' AND answer_verified=1 AND origin='official' GROUP BY topic ORDER BY topic
     `).all();
     const years = db.prepare(`
       SELECT year, COUNT(*) AS count FROM questions
-      WHERE status='published' AND answer_verified=1 GROUP BY year ORDER BY year DESC
+      WHERE status='published' AND answer_verified=1 AND origin='official' GROUP BY year ORDER BY year DESC
     `).all();
     const provenance = db.prepare('SELECT COUNT(*) AS count FROM question_provenance').get().count;
     response.json({ ...counts, provenanceRecords: provenance, topics, years });
@@ -384,7 +446,7 @@ export function createApp(db) {
     if (year !== null && (!Number.isInteger(year) || year < 2000 || year > 2100)) {
       throw apiError(400, 'INVALID_YEAR', 'Năm đề không hợp lệ.');
     }
-    const conditions = ["status='published'", 'answer_verified=1'];
+    const conditions = ["status='published'", 'answer_verified=1', "origin='official'"];
     const params = [];
     if (topic !== 'all') { conditions.push('topic=?'); params.push(topic); }
     if (year !== null) { conditions.push('year=?'); params.push(year); }
@@ -413,7 +475,7 @@ export function createApp(db) {
   });
 
   app.get('/api/v1/exam-templates', (_request, response) => {
-    const items = db.prepare('SELECT id, title, position FROM exam_templates ORDER BY position').all();
+    const items = db.prepare('SELECT id, title, position, tag FROM exam_templates ORDER BY position').all();
     response.json({ items });
   });
 
@@ -459,7 +521,7 @@ export function createApp(db) {
       SELECT a.id AS attemptId, a.mode, a.status, a.total_score AS totalScore, a.base_score AS baseScore,
              a.correct_count AS correctCount, a.wrong_count AS wrongCount, a.skipped_count AS skippedCount,
              a.started_at AS startedAt, a.expires_at AS expiresAt, a.submitted_at AS submittedAt,
-             t.title AS templateTitle,
+             t.title AS templateTitle, t.tag AS templateTag,
              (SELECT COUNT(*) FROM attempt_questions aq WHERE aq.attempt_id = a.id) AS questionCount,
              (SELECT SUM(q.points) FROM attempt_questions aq JOIN questions q ON q.id = aq.question_id WHERE aq.attempt_id = a.id) AS pointsSum
       FROM attempts a LEFT JOIN exam_templates t ON t.id = a.exam_template_id
@@ -490,13 +552,13 @@ export function createApp(db) {
       `).all(templateId);
     } else if (input.year) {
       ids = db.prepare(`
-        SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND year=?
+        SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND origin='official' AND year=?
         ORDER BY source_question_number
       `).all(input.year);
       if (ids.length === 0) throw apiError(404, 'YEAR_NOT_FOUND', 'Không có đề đã kiểm duyệt cho năm này.');
     } else {
       ids = [3, 4, 5].flatMap((points) => db.prepare(`
-        SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND points=?
+        SELECT id FROM questions WHERE status='published' AND answer_verified=1 AND origin='official' AND points=?
         ORDER BY RANDOM() LIMIT 8
       `).all(points));
       if (ids.length !== 24) throw apiError(503, 'QUESTION_POOL_INCOMPLETE', 'Ngân hàng câu hỏi chưa đủ để tạo đề 24 câu.');

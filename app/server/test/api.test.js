@@ -25,12 +25,12 @@ after(async () => {
 });
 
 test('seed imports canonical, published and provenance counts', () => {
-  assert.equal(db.prepare('SELECT COUNT(*) count FROM questions').get().count, 436);
-  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='published' AND answer_verified=1").get().count, 216);
-  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='published' AND TRIM(COALESCE(stem_vi, ''))<>''").get().count, 216);
+  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE origin='official'").get().count, 436);
+  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE origin='official' AND status='published' AND answer_verified=1").get().count, 216);
+  assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE origin='official' AND status='published' AND TRIM(COALESCE(stem_vi, ''))<>''").get().count, 216);
   assert.equal(db.prepare("SELECT COUNT(*) count FROM questions WHERE status='needs_review'").get().count, 220);
   assert.equal(db.prepare('SELECT COUNT(*) count FROM question_provenance').get().count, 556);
-  assert.equal(db.prepare('SELECT COUNT(*) count FROM question_options').get().count, 2180);
+  assert.equal(db.prepare("SELECT COUNT(*) count FROM question_options o JOIN questions q ON q.id=o.question_id WHERE q.origin='official'").get().count, 2180);
 });
 
 test('public practice response never leaks correct answer', async () => {
@@ -106,7 +106,7 @@ test('official 18-question year remains a faithful source exam', async () => {
 });
 
 test('10 pre-built exam templates are seeded with 24 questions each', () => {
-  const templates = db.prepare('SELECT id FROM exam_templates ORDER BY position').all();
+  const templates = db.prepare('SELECT id FROM exam_templates WHERE tag IS NULL ORDER BY position').all();
   assert.equal(templates.length, 10);
   for (const template of templates) {
     const count = db.prepare('SELECT COUNT(*) count FROM exam_template_questions WHERE template_id=?').get(template.id).count;
@@ -118,7 +118,8 @@ test('exam-templates endpoint lists all 10 templates', async () => {
   const response = await fetch(`${baseUrl}/api/v1/exam-templates`);
   assert.equal(response.status, 200);
   const body = await response.json();
-  assert.equal(body.items.length, 10);
+  assert.equal(body.items.filter((item) => !item.tag).length, 10);
+  assert.equal(body.items.filter((item) => item.tag === 'ai_generated').length, 5);
   assert.equal(body.items[0].title, 'Đề luyện tập số 1');
 });
 
@@ -256,4 +257,50 @@ test('a logged-in user can mint a fresh resume token for their own in-progress a
     headers: { 'x-attempt-token': newToken },
   });
   assert.equal(resumedWithNewToken.status, 200);
+});
+
+test('AI generate exams: 5 tagged templates with 24 questions split 8/8/8 by difficulty', () => {
+  const templates = db.prepare("SELECT id FROM exam_templates WHERE tag='ai_generated' ORDER BY position").all();
+  assert.equal(templates.length, 5);
+  for (const template of templates) {
+    const rows = db.prepare(`
+      SELECT q.points, q.origin, q.correct_option, q.explanation_json
+      FROM exam_template_questions etq JOIN questions q ON q.id=etq.question_id
+      WHERE etq.template_id=? ORDER BY etq.position
+    `).all(template.id);
+    assert.equal(rows.length, 24);
+    assert.deepEqual(rows.map((row) => row.points), [...Array(8).fill(3), ...Array(8).fill(4), ...Array(8).fill(5)]);
+    for (const row of rows) {
+      assert.equal(row.origin, 'ai');
+      assert.ok(['A', 'B', 'C', 'D', 'E'].includes(row.correct_option));
+      assert.ok(JSON.parse(row.explanation_json).length >= 2, 'every AI question ships a worked explanation');
+    }
+  }
+});
+
+test('AI questions never leak into official random exams, practice or stats', async () => {
+  const exam = await (await fetch(`${baseUrl}/api/v1/exams`, {
+    method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}',
+  })).json();
+  assert.ok(exam.questions.every((question) => question.origin === 'official'));
+  const practice = await (await fetch(`${baseUrl}/api/v1/practice/questions?limit=50`)).json();
+  assert.ok(practice.items.every((question) => question.origin === 'official'));
+  const meta = await (await fetch(`${baseUrl}/api/v1/meta`)).json();
+  assert.equal(meta.published_questions, 216);
+});
+
+test('submitting an AI exam returns the worked explanations in the review', async () => {
+  const exam = await (await fetch(`${baseUrl}/api/v1/exams`, {
+    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ templateId: 'tpl-ai-01' }),
+  })).json();
+  assert.equal(exam.questions.length, 24);
+  assert.equal(exam.maxScore, 120);
+  assert.ok(exam.questions.every((question) => question.origin === 'ai' && !Object.hasOwn(question, 'correctOption')));
+  const result = await (await fetch(`${baseUrl}/api/v1/attempts/${exam.attemptId}/submit`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-attempt-token': exam.attemptToken },
+    body: JSON.stringify({ answers: {} }),
+  })).json();
+  assert.equal(result.totalScore, 24);
+  assert.ok(result.review.every((item) => item.explanation.length >= 2));
 });

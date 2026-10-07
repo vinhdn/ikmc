@@ -19,6 +19,7 @@ interface ApiQuestion {
   stem: string;
   stemVi: string | null;
   imageUrl: string | null;
+  origin?: 'official' | 'ai';
   options: ApiOption[];
 }
 
@@ -86,6 +87,7 @@ export interface ExamTemplate {
   id: string;
   title: string;
   position: number;
+  tag: string | null;
 }
 
 export interface AttemptHistoryItem {
@@ -101,6 +103,7 @@ export interface AttemptHistoryItem {
   expiresAt: string | null;
   submittedAt: string | null;
   templateTitle: string | null;
+  templateTag: string | null;
   questionCount: number;
   maxScore: number | null;
 }
@@ -226,6 +229,7 @@ function toQuestion(item: ApiQuestion): Question {
     textEn: item.stem,
     textVi: item.stemVi ?? undefined,
     imageUrl: item.imageUrl ?? undefined,
+    origin: item.origin ?? 'official',
     options: item.options.map((option) => ({
       key: option.key,
       text: option.text || `Phương án ${option.key}`,

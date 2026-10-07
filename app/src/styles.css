@@ -1150,3 +1150,42 @@ h3 {
   color: var(--muted);
   font-size: 14px;
 }
+
+/* ---------- AI generate ---------- */
+.ai-chip {
+  display: inline-block;
+  background: linear-gradient(90deg, #8338ec, #3a86ff);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.picker-section-title {
+  font-size: 20px;
+  margin: 22px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.picker-section-note {
+  color: var(--muted);
+  font-size: 14px;
+  margin: -4px 0 12px;
+}
+.template-card.ai {
+  border-color: #c4b5fd;
+  background: linear-gradient(180deg, #f5f3ff, #ffffff 60%);
+}
+.template-card.ai h3 {
+  margin-top: 10px;
+}
+.solution-label {
+  font-weight: 800;
+  margin: 2px 0 6px;
+  color: #2e7d32;
+}

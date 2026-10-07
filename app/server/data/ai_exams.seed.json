@@ -1,0 +1,6942 @@
+{
+ "version": 1,
+ "source": {
+  "id": "src-ai-v1",
+  "slug": "ai-generate-v1",
+  "title": "AI generate · Bộ đề thử nghiệm",
+  "year": null,
+  "language": "bilingual",
+  "kind": "practice",
+  "source_pdf_url": "",
+  "page_count": 1,
+  "question_count": 120,
+  "review_status": "reviewed"
+ },
+ "templates": [
+  {
+   "id": "tpl-ai-01",
+   "slug": "de-ai-1",
+   "title": "Đề AI số 1",
+   "position": 101,
+   "tag": "ai_generated",
+   "question_ids": [
+    "ai-e1-q01",
+    "ai-e1-q02",
+    "ai-e1-q03",
+    "ai-e1-q04",
+    "ai-e1-q05",
+    "ai-e1-q06",
+    "ai-e1-q07",
+    "ai-e1-q08",
+    "ai-e1-q09",
+    "ai-e1-q10",
+    "ai-e1-q11",
+    "ai-e1-q12",
+    "ai-e1-q13",
+    "ai-e1-q14",
+    "ai-e1-q15",
+    "ai-e1-q16",
+    "ai-e1-q17",
+    "ai-e1-q18",
+    "ai-e1-q19",
+    "ai-e1-q20",
+    "ai-e1-q21",
+    "ai-e1-q22",
+    "ai-e1-q23",
+    "ai-e1-q24"
+   ]
+  },
+  {
+   "id": "tpl-ai-02",
+   "slug": "de-ai-2",
+   "title": "Đề AI số 2",
+   "position": 102,
+   "tag": "ai_generated",
+   "question_ids": [
+    "ai-e2-q01",
+    "ai-e2-q02",
+    "ai-e2-q03",
+    "ai-e2-q04",
+    "ai-e2-q05",
+    "ai-e2-q06",
+    "ai-e2-q07",
+    "ai-e2-q08",
+    "ai-e2-q09",
+    "ai-e2-q10",
+    "ai-e2-q11",
+    "ai-e2-q12",
+    "ai-e2-q13",
+    "ai-e2-q14",
+    "ai-e2-q15",
+    "ai-e2-q16",
+    "ai-e2-q17",
+    "ai-e2-q18",
+    "ai-e2-q19",
+    "ai-e2-q20",
+    "ai-e2-q21",
+    "ai-e2-q22",
+    "ai-e2-q23",
+    "ai-e2-q24"
+   ]
+  },
+  {
+   "id": "tpl-ai-03",
+   "slug": "de-ai-3",
+   "title": "Đề AI số 3",
+   "position": 103,
+   "tag": "ai_generated",
+   "question_ids": [
+    "ai-e3-q01",
+    "ai-e3-q02",
+    "ai-e3-q03",
+    "ai-e3-q04",
+    "ai-e3-q05",
+    "ai-e3-q06",
+    "ai-e3-q07",
+    "ai-e3-q08",
+    "ai-e3-q09",
+    "ai-e3-q10",
+    "ai-e3-q11",
+    "ai-e3-q12",
+    "ai-e3-q13",
+    "ai-e3-q14",
+    "ai-e3-q15",
+    "ai-e3-q16",
+    "ai-e3-q17",
+    "ai-e3-q18",
+    "ai-e3-q19",
+    "ai-e3-q20",
+    "ai-e3-q21",
+    "ai-e3-q22",
+    "ai-e3-q23",
+    "ai-e3-q24"
+   ]
+  },
+  {
+   "id": "tpl-ai-04",
+   "slug": "de-ai-4",
+   "title": "Đề AI số 4",
+   "position": 104,
+   "tag": "ai_generated",
+   "question_ids": [
+    "ai-e4-q01",
+    "ai-e4-q02",
+    "ai-e4-q03",
+    "ai-e4-q04",
+    "ai-e4-q05",
+    "ai-e4-q06",
+    "ai-e4-q07",
+    "ai-e4-q08",
+    "ai-e4-q09",
+    "ai-e4-q10",
+    "ai-e4-q11",
+    "ai-e4-q12",
+    "ai-e4-q13",
+    "ai-e4-q14",
+    "ai-e4-q15",
+    "ai-e4-q16",
+    "ai-e4-q17",
+    "ai-e4-q18",
+    "ai-e4-q19",
+    "ai-e4-q20",
+    "ai-e4-q21",
+    "ai-e4-q22",
+    "ai-e4-q23",
+    "ai-e4-q24"
+   ]
+  },
+  {
+   "id": "tpl-ai-05",
+   "slug": "de-ai-5",
+   "title": "Đề AI số 5",
+   "position": 105,
+   "tag": "ai_generated",
+   "question_ids": [
+    "ai-e5-q01",
+    "ai-e5-q02",
+    "ai-e5-q03",
+    "ai-e5-q04",
+    "ai-e5-q05",
+    "ai-e5-q06",
+    "ai-e5-q07",
+    "ai-e5-q08",
+    "ai-e5-q09",
+    "ai-e5-q10",
+    "ai-e5-q11",
+    "ai-e5-q12",
+    "ai-e5-q13",
+    "ai-e5-q14",
+    "ai-e5-q15",
+    "ai-e5-q16",
+    "ai-e5-q17",
+    "ai-e5-q18",
+    "ai-e5-q19",
+    "ai-e5-q20",
+    "ai-e5-q21",
+    "ai-e5-q22",
+    "ai-e5-q23",
+    "ai-e5-q24"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "ai-e1-q01",
+   "canonical_hash": "ai-e1-q01",
+   "source_id": "src-ai-v1",
+   "source_question_number": 1,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "How many triangles are in the picture?",
+   "stem_vi": "Trong hình có bao nhiêu hình tam giác?",
+   "image_url": "/question-images/ai/e1/q01.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Đếm hình tam giác theo từng hàng để không bỏ sót: hàng 1 có 6, hàng 2 có 1.",
+    "Cộng lại: 6 + 1 = 7.",
+    "Mẹo: hình tam giác dù bị xoay nghiêng hay lộn ngược vẫn là hình tam giác."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_count_shapes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q02",
+   "canonical_hash": "ai-e1-q02",
+   "source_id": "src-ai-v1",
+   "source_question_number": 2,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "There are 5 ladybirds on a leaf. How many dots do they have altogether?",
+   "stem_vi": "Có 5 chú bọ rùa đậu trên lá. Tổng cộng các chú bọ rùa có bao nhiêu chấm?",
+   "image_url": "/question-images/ai/e1/q02.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Đếm số chấm trên từng chú bọ rùa: 3, 5, 2, 4, 6.",
+    "Cộng lại: 3 + 5 + 2 + 4 + 6 = 20.",
+    "Mẹo: ghép các số thành cặp tròn chục (ví dụ 4 + 6 = 10) để cộng nhanh và ít nhầm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_dots), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "19",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q03",
+   "canonical_hash": "ai-e1-q03",
+   "source_id": "src-ai-v1",
+   "source_question_number": 3,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "Yesterday was Thursday. What day will it be tomorrow?",
+   "stem_vi": "Hôm qua là Thứ Năm. Hỏi ngày mai là thứ mấy?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Hôm qua là Thứ Năm nên hôm nay là Thứ Sáu.",
+    "Ngày mai là ngày sau hôm nay: Thứ Bảy.",
+    "Mẹo: vẽ một hàng các ngày trong tuần rồi đánh dấu hôm qua – hôm nay – ngày mai."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_day), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Thứ Bảy",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Thứ Sáu",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Chủ Nhật",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Thứ Hai",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Thứ Năm",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q04",
+   "canonical_hash": "ai-e1-q04",
+   "source_id": "src-ai-v1",
+   "source_question_number": 4,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "11 children stand in a line. Lan is 4th from the front and Minh is 3rd from the back. How many children stand between Lan and Minh?",
+   "stem_vi": "Có 11 bạn nhỏ xếp thành một hàng. Lan đứng thứ 4 tính từ đầu hàng, Minh đứng thứ 3 tính từ cuối hàng. Có bao nhiêu bạn đứng giữa Lan và Minh?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Hàng có 11 bạn. Minh đứng thứ 3 tính từ cuối, nên tính từ đầu hàng Minh đứng thứ 11 − 3 + 1 = 9.",
+    "Lan đứng thứ 4. Các bạn đứng giữa ở các vị trí từ 5 đến 8.",
+    "Số bạn đứng giữa: 8 − 4 = 4 bạn.",
+    "Mẹo: vẽ một hàng chấm tròn và đánh số để dễ đếm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_queue), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q05",
+   "canonical_hash": "ai-e1-q05",
+   "source_id": "src-ai-v1",
+   "source_question_number": 5,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "This is Grandma's birthday cake. A big candle stands for 10 years and a small one for 1 year. How old is Grandma?",
+   "stem_vi": "Đây là bánh sinh nhật của bà. Mỗi cây nến to là 10 tuổi, mỗi cây nến nhỏ là 1 tuổi. Bà bao nhiêu tuổi?",
+   "image_url": "/question-images/ai/e1/q05.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Có 6 cây nến to (mỗi cây 10 tuổi) → 6 × 10 = 60 tuổi.",
+    "Có 7 cây nến nhỏ (mỗi cây 1 tuổi) → 7 tuổi.",
+    "Bà có 60 + 7 = 67 tuổi.",
+    "Chú ý: đếm riêng nến to và nến nhỏ, đừng đảo hàng chục với hàng đơn vị."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_cake), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "67",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "68",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "69",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "76",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "77",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q06",
+   "canonical_hash": "ai-e1-q06",
+   "source_id": "src-ai-v1",
+   "source_question_number": 6,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "Na arranges shapes in a repeating pattern as shown. What is the 20th shape?",
+   "stem_vi": "Bạn Na xếp các hình theo một quy luật lặp lại như hình vẽ. Hình thứ 20 là hình gì?",
+   "image_url": "/question-images/ai/e1/q06.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Nhóm hình lặp lại gồm 3 hình: hình tròn, hình tam giác, hình vuông.",
+    "20 = 3 × 6 + 2, nên hình thứ 20 giống hình thứ 2 trong nhóm: hình tam giác.",
+    "Mẹo: tìm nhóm lặp lại trước, rồi chia vị trí cần tìm cho số hình trong nhóm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_pattern), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Hình tròn",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Hình vuông",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Ngôi sao",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Trái tim",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Hình tam giác",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q07",
+   "canonical_hash": "ai-e1-q07",
+   "source_id": "src-ai-v1",
+   "source_question_number": 7,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "A big square was made of 25 small squares (5 rows of 5). Some squares fell out. How many squares are missing?",
+   "stem_vi": "Một hình vuông lớn được ghép từ 25 ô vuông nhỏ (5 hàng, mỗi hàng 5 ô). Một số ô đã bị rơi mất, để lại các chỗ trống (ô viền nét đứt). Có bao nhiêu ô bị mất?",
+   "image_url": "/question-images/ai/e1/q07.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Hình vuông lớn có 5 hàng, mỗi hàng 5 ô, tất cả 5 × 5 = 25 ô.",
+    "Đếm số ô còn lại theo từng hàng: 3 + 4 + 4 + 4 + 3 = 18 ô.",
+    "Số ô bị mất: 25 − 18 = 7 ô."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_grid_missing), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q08",
+   "canonical_hash": "ai-e1-q08",
+   "source_id": "src-ai-v1",
+   "source_question_number": 8,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "An has 7 marbles and Bình has 19. How many marbles must Bình give An so they have the same number?",
+   "stem_vi": "An có 7 viên bi, Bình có 19 viên bi. Bình cần cho An bao nhiêu viên bi để hai bạn có số viên bi bằng nhau?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Hai bạn có tất cả 7 + 19 = 26 viên bi.",
+    "Chia đều thì mỗi bạn có 26 : 2 = 13 viên bi.",
+    "Bình có 19, cần đưa cho An: 19 − 13 = 6 viên bi.",
+    "Chú ý: không phải 19 − 7 = 12, vì khi Bình đưa đi thì Bình cũng bị bớt."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_equalize), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q09",
+   "canonical_hash": "ai-e1-q09",
+   "source_id": "src-ai-v1",
+   "source_question_number": 9,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "Scales 1 and 2 are balanced. How many circles must go on the right pan so that scale 3 balances too?",
+   "stem_vi": "Cân 1 và cân 2 đang thăng bằng. Cần đặt bao nhiêu hình tròn lên đĩa bên phải để cân 3 cũng thăng bằng?",
+   "image_url": "/question-images/ai/e1/q09.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Cân 1: 1 hình vuông nặng bằng 3 hình tròn.",
+    "Cân 2: 1 hình tam giác nặng bằng 2 hình vuông.",
+    "Đổi mỗi hình vuông thành 3 hình tròn: 2 hình vuông = 2 × 3 = 6 hình tròn.",
+    "Vậy 1 hình tam giác nặng bằng 6 hình tròn.",
+    "Mẹo: thay dần các hình nặng hơn bằng các hình nhỏ nhất."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_balance), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q10",
+   "canonical_hash": "ai-e1-q10",
+   "source_id": "src-ai-v1",
+   "source_question_number": 10,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Each shape stands for a number; equal shapes are equal numbers. Which number replaces the “?”?",
+   "stem_vi": "Mỗi hình tượng trưng cho một số; các hình giống nhau là cùng một số. Số nào thay cho dấu “?”?",
+   "image_url": "/question-images/ai/e1/q10.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Dòng 1: 3 ngôi sao = 12, nên 1 ngôi sao = 4.",
+    "Dòng 2: 4 + hình tam giác = 11, nên hình tam giác = 11 − 4 = 7.",
+    "Dòng 3: 7 + 7 + 4 = 18."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_symbols), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q11",
+   "canonical_hash": "ai-e1-q11",
+   "source_id": "src-ai-v1",
+   "source_question_number": 11,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "Mum bakes 3 pizzas, each cut into 6 equal slices. 8 children each eat 2 slices. How many slices are left?",
+   "stem_vi": "Mẹ nướng 3 chiếc bánh pizza, mỗi chiếc cắt thành 6 miếng bằng nhau. Có 8 bạn nhỏ, mỗi bạn ăn 2 miếng. Hỏi còn lại bao nhiêu miếng bánh?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Số miếng bánh: 3 × 6 = 18 miếng.",
+    "8 bạn, mỗi bạn ăn 2 miếng: 8 × 2 = 16 miếng.",
+    "Còn lại: 18 − 16 = 2 miếng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_pizza), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q12",
+   "canonical_hash": "ai-e1-q12",
+   "source_id": "src-ai-v1",
+   "source_question_number": 12,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "The picture has 24 squares. Mai has coloured some of them. How many more must she colour so that exactly half are coloured?",
+   "stem_vi": "Hình có 24 ô vuông. Bạn Mai đã tô màu một số ô. Cần tô thêm bao nhiêu ô nữa để đúng một nửa số ô được tô màu?",
+   "image_url": "/question-images/ai/e1/q12.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Hình có 4 × 6 = 24 ô, một nửa là 24 : 2 = 12 ô.",
+    "Đã tô màu 8 ô.",
+    "Cần tô thêm: 12 − 8 = 4 ô."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_half_grid), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q13",
+   "canonical_hash": "ai-e1-q13",
+   "source_id": "src-ai-v1",
+   "source_question_number": 13,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "It is now 2:30. What time was it 3 hours 30 minutes ago?",
+   "stem_vi": "Bây giờ là 2 giờ 30 phút. Cách đây 3 giờ 30 phút là mấy giờ?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Lùi 3 giờ: 2 giờ 30 phút → 11 giờ 30 phút.",
+    "Lùi tiếp 30 phút: 11 giờ 30 phút → 11 giờ.",
+    "Mẹo: vẽ đồng hồ và quay kim ngược chiều để kiểm tra."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_time), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "9 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "10 giờ",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11 giờ",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "6 giờ",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q14",
+   "canonical_hash": "ai-e1-q14",
+   "source_id": "src-ai-v1",
+   "source_question_number": 14,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Bin encodes letters with the board shown. For example, MEO has the code A1 B1 C1. Which word did Bin encode as B2 C1 A2?",
+   "stem_vi": "Bin mã hóa các chữ cái bằng bảng bên. Ví dụ, từ MEO có mã là A1 B1 C1. Bin đã mã hóa từ nào thành B2 C1 A2?",
+   "image_url": "/question-images/ai/e1/q14.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Mỗi mã gồm chữ của cột (A, B, C, D) và số của hàng (1, 2, 3, 4).",
+    "Giải mã từng phần: B2 → H; C1 → O; A2 → A.",
+    "Ghép lại được từ HOA."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_encode), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "HOA",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "HAO",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "HOE",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "NOA",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "HOI",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q15",
+   "canonical_hash": "ai-e1-q15",
+   "source_id": "src-ai-v1",
+   "source_question_number": 15,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "Ha puts 6 square cards together as shown. Wherever two cards share a whole side she uses one piece of tape. How many pieces of tape does she need?",
+   "stem_vi": "Bạn Hà ghép 6 tấm bìa hình vuông như hình. Ở mỗi chỗ hai tấm bìa chạm nhau bằng cả một cạnh, Hà dán một miếng băng dính. Hà cần bao nhiêu miếng băng dính?",
+   "image_url": "/question-images/ai/e1/q15.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Mỗi chỗ hai tấm bìa chạm nhau bằng một cạnh cần một miếng băng dính.",
+    "Đếm các cạnh chung nằm dọc (giữa hai tấm cạnh nhau theo hàng ngang): 3; các cạnh chung nằm ngang (giữa hai tấm trên – dưới): 3.",
+    "Tổng: 3 + 3 = 6 miếng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_glue), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q16",
+   "canonical_hash": "ai-e1-q16",
+   "source_id": "src-ai-v1",
+   "source_question_number": 16,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "How many numbers from 10 to 60 are written using only the digits 1, 3, 5? (Digits may repeat.)",
+   "stem_vi": "Có bao nhiêu số từ 10 đến 60 chỉ được viết bằng các chữ số 1, 3, 5? (Mỗi chữ số có thể dùng nhiều lần.)",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Liệt kê các số từ 10 đến 60 chỉ dùng chữ số 1, 3, 5: 11, 13, 15, 31, 33, 35, 51, 53, 55.",
+    "Đếm được 9 số.",
+    "Mẹo: liệt kê theo hàng chục (chục 1, chục 2, ...) để không bỏ sót."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_digits), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q17",
+   "canonical_hash": "ai-e1-q17",
+   "source_id": "src-ai-v1",
+   "source_question_number": 17,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "A zoo has 12 camels, each with 1 or 2 humps, 17 humps in total. How many camels have 2 humps?",
+   "stem_vi": "Trong sở thú có 12 con lạc đà, mỗi con có 1 bướu hoặc 2 bướu. Tổng cộng có 17 cái bướu. Có bao nhiêu con lạc đà 2 bướu?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Giả sử cả 12 con lạc đà đều là loại có 1 bướu: khi đó có 1 × 12 = 12 bướu.",
+    "Thực tế có 17 bướu, thừa ra 17 − 12 = 5.",
+    "Mỗi con lạc đà loại 2 bướu làm thừa thêm 1, nên có 5 : 1 = 5 con lạc đà loại 2 bướu.",
+    "Đáp số: 5."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_two_kinds), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q18",
+   "canonical_hash": "ai-e1-q18",
+   "source_id": "src-ai-v1",
+   "source_question_number": 18,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "9 flags stand along a straight track, the first at the start and the last at the finish. Neighbouring flags are 6 m apart. How long is the track?",
+   "stem_vi": "Có 9 lá cờ cắm trên một đường chạy thẳng. Lá cờ đầu tiên ở vạch xuất phát, lá cuối cùng ở vạch đích. Hai lá cờ liền nhau cách nhau 6 m. Đường chạy dài bao nhiêu mét?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Có 9 lá cờ thì có 9 − 1 = 8 khoảng cách giữa hai lá liền nhau.",
+    "Độ dài đường chạy: 8 × 6 = 48 m.",
+    "Chú ý: số khoảng cách ít hơn số lá cờ 1 (không phải 9 × 6)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_flags), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "45 m",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "48 m",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "54 m",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "60 m",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "66 m",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q19",
+   "canonical_hash": "ai-e1-q19",
+   "source_id": "src-ai-v1",
+   "source_question_number": 19,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "A mouse goes from S to Đ, each step moving one square right or down, never onto a grey rock. How many different routes are there?",
+   "stem_vi": "Chú chuột đi từ ô S đến ô Đ. Mỗi bước chú chỉ được đi sang phải hoặc đi xuống một ô, và không được đi vào ô có đá (màu xám). Có bao nhiêu đường đi khác nhau?",
+   "image_url": "/question-images/ai/e1/q19.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Vì chỉ được đi sang phải hoặc đi xuống, số cách đến một ô = số cách đến ô bên trái + số cách đến ô bên trên.",
+    "Ô có đá ghi 0 cách. Điền dần từ ô S: 1 1 1 1 | 1 x 1 2 | 1 1 2 4 (mỗi hàng cách nhau bởi |, x là ô đá).",
+    "Ô Đ có 4 cách."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_grid_paths), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q20",
+   "canonical_hash": "ai-e1-q20",
+   "source_id": "src-ai-v1",
+   "source_question_number": 20,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Three frogs live in a pond. Each night exactly one frog sings to the other two. After 10 nights one frog has sung 3 times and another has listened to 6 songs. How many songs has the third frog listened to?",
+   "stem_vi": "Ba chú ếch sống trong một cái ao. Mỗi đêm, đúng một chú ếch hát một bài cho hai chú kia nghe. Sau 10 đêm, một chú ếch đã hát 3 lần, một chú khác đã nghe 6 bài hát. Chú ếch thứ ba đã nghe bao nhiêu bài hát?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Mỗi đêm có 1 chú hát, 2 chú nghe. Một chú nghe bài hát vào mọi đêm mà chú không hát.",
+    "Chú thứ hai nghe 6 bài nên chú hát 10 − 6 = 4 đêm.",
+    "Chú thứ nhất hát 3 đêm, nên chú thứ ba hát 10 − 3 − 4 = 3 đêm.",
+    "Chú thứ ba nghe vào các đêm còn lại: 10 − 3 = 7 bài."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_frogs), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q21",
+   "canonical_hash": "ai-e1-q21",
+   "source_id": "src-ai-v1",
+   "source_question_number": 21,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "How many triangles are there in the picture?",
+   "stem_vi": "Có bao nhiêu hình tam giác trong hình vẽ?",
+   "image_url": "/question-images/ai/e1/q21.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Từ đỉnh trên có 4 đường đi xuống. Hai đường bất kỳ trong số đó cùng với một đường nằm ngang tạo thành một hình tam giác.",
+    "Số cách chọn 2 đường từ 4 đường: 3 + 2 + ... + 1 = 6.",
+    "Có 2 đường nằm ngang (kể cả cạnh đáy), nên có 6 × 2 = 12 hình tam giác.",
+    "Mẹo: đếm có hệ thống – tam giác nhỏ, rồi tam giác ghép từ 2, 3 phần..."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_triangles), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q22",
+   "canonical_hash": "ai-e1-q22",
+   "source_id": "src-ai-v1",
+   "source_question_number": 22,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "measurement",
+   "stem": "A snail climbs a 10 m wall: up 3 m each day, down 1 m each night. Starting at the bottom on the morning of day 1, on which day does it reach the top?",
+   "stem_vi": "Một con ốc sên bò lên một bức tường cao 10 m. Ban ngày ốc bò lên được 3 m, ban đêm ốc tụt xuống 1 m. Bắt đầu từ chân tường vào sáng ngày thứ nhất, ốc lên tới đỉnh tường vào ngày thứ mấy?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Mỗi ngày ốc lên 3 m, mỗi đêm tụt 1 m. Nhưng ngày cuối cùng chạm đỉnh là xong, không tụt nữa.",
+    "Theo dõi từng ngày: ngày 1: lên 3 m, đêm tụt còn 2 m; ngày 2: lên 5 m, đêm tụt còn 4 m; ngày 3: lên 7 m, đêm tụt còn 6 m; ngày 4: lên 9 m, đêm tụt còn 8 m; ngày 5: bò lên tới 11 m, chạm đỉnh.",
+    "Ốc lên tới đỉnh vào ngày thứ 5 (không phải 10 : 2 = 5)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_snail), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q23",
+   "canonical_hash": "ai-e1-q23",
+   "source_id": "src-ai-v1",
+   "source_question_number": 23,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "Cards lie on the table as shown. In each step you may swap any two cards. What is the smallest number of steps to put them in increasing order?",
+   "stem_vi": "Trên bàn có các tấm thẻ như hình. Mỗi bước, em được đổi chỗ hai tấm thẻ bất kỳ. Cần ít nhất bao nhiêu bước để các thẻ được xếp theo thứ tự từ bé đến lớn?",
+   "image_url": "/question-images/ai/e1/q23.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Mỗi bước đổi chỗ 2 thẻ có thể đưa ít nhất một thẻ về đúng chỗ.",
+    "Làm lần lượt: 3 1 2 5 4 → 1 3 2 5 4 → 1 2 3 5 4 → 1 2 3 4 5 (3 bước).",
+    "Không thể ít hơn 3 bước vì các thẻ sai chỗ tạo thành 2 nhóm vòng; mỗi nhóm k thẻ cần k − 1 lần đổi."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_swaps), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e1-q24",
+   "canonical_hash": "ai-e1-q24",
+   "source_id": "src-ai-v1",
+   "source_question_number": 24,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Ha, Lan, Minh, Tung and Vy share a birthday; each cake shows the child's age. Lan is 2 years older than Ha. Minh is 1 year younger than Lan. Tung is the oldest. Vy is not the youngest. Which cake is Vy's?",
+   "stem_vi": "Năm bạn Hà, Lan, Minh, Tùng, Vy có cùng ngày sinh nhật; mỗi bạn có một chiếc bánh với cây nến ghi số tuổi. Lan hơn Hà 2 tuổi. Minh kém Lan 1 tuổi. Tùng lớn tuổi nhất. Vy không phải là bạn nhỏ tuổi nhất. Bánh nào là của Vy?",
+   "image_url": "/question-images/ai/e1/q24.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Tùng lớn tuổi nhất nên Tùng 9 tuổi. Hà, Minh, Lan là ba tuổi liên tiếp (Minh = Hà + 1, Lan = Hà + 2).",
+    "Còn lại các tuổi 5, 6, 7, 8 cho Hà, Minh, Lan, Vy. Nếu Hà 6 tuổi thì Vy 5 tuổi là nhỏ nhất – không được.",
+    "Vậy Hà 5, Minh 6, Lan 7, Vy 8 tuổi. Bánh của Vy có số 8."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_age_cakes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Bánh A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Bánh B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bánh C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Bánh D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Bánh E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q01",
+   "canonical_hash": "ai-e2-q01",
+   "source_id": "src-ai-v1",
+   "source_question_number": 25,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "Which box has the most circles?",
+   "stem_vi": "Hộp nào có nhiều hình tròn nhất?",
+   "image_url": "/question-images/ai/e2/q01.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Đếm hình tròn trong từng hộp: hộp A có 4, hộp B có 3, hộp C có 5, hộp D có 4, hộp E có 6.",
+    "Hộp E có nhiều hình tròn nhất (6).",
+    "Mẹo: chỉ đếm đúng loại hình được hỏi, bỏ qua các hình khác."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_most_shape), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Hộp A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Hộp B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Hộp C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Hộp D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Hộp E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q02",
+   "canonical_hash": "ai-e2-q02",
+   "source_id": "src-ai-v1",
+   "source_question_number": 26,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Which number is exactly halfway between 18 and 46?",
+   "stem_vi": "Số nào nằm chính giữa hai số 18 và 46 trên tia số?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Khoảng cách từ 18 đến 46 là 46 − 18 = 28.",
+    "Số chính giữa cách mỗi đầu một nửa khoảng đó: 28 : 2 = 14.",
+    "Số cần tìm: 18 + 14 = 32 (kiểm tra: 32 + 14 = 46)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_midpoint), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "28",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "32",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "33",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "34",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "35",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q03",
+   "canonical_hash": "ai-e2-q03",
+   "source_id": "src-ai-v1",
+   "source_question_number": 27,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "The clock shows the time. What time will it be 1 hour 30 minutes later?",
+   "stem_vi": "Đồng hồ chỉ giờ như hình. Sau 1 giờ 30 phút nữa thì đồng hồ chỉ mấy giờ?",
+   "image_url": "/question-images/ai/e2/q03.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Kim ngắn chỉ giờ, kim dài (màu đỏ) chỉ phút: đồng hồ đang chỉ 4 giờ.",
+    "Thêm 1 giờ 30 phút: 4 giờ + 1 giờ 30 phút = 5 giờ 30 phút.",
+    "Mẹo: kim dài chỉ số 6 là 30 phút (rưỡi), chỉ số 12 là giờ đúng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_clock), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4 giờ",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5 giờ",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6 giờ",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "6 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q04",
+   "canonical_hash": "ai-e2-q04",
+   "source_id": "src-ai-v1",
+   "source_question_number": 28,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "Bin's flag has more than 1 circle, and exactly 2 more triangles than squares. Which flag is Bin's?",
+   "stem_vi": "Lá cờ của Bin có nhiều hơn 1 hình tròn, và số hình tam giác nhiều hơn số hình vuông đúng 2 hình. Lá cờ nào là của Bin?",
+   "image_url": "/question-images/ai/e2/q04.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Đếm từng loại hình: A: 1 tròn, 3 tam giác, 1 vuông; B: 2 tròn, 3 tam giác, 1 vuông; C: 3 tròn, 2 tam giác, 1 vuông; D: 2 tròn, 4 tam giác, 1 vuông; E: 3 tròn, 4 tam giác, 3 vuông.",
+    "Lá cờ cần: số hình tròn lớn hơn 1, và số tam giác = số hình vuông + 2.",
+    "Chỉ có lá cờ B đúng cả hai điều kiện."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_attr), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Lá cờ A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Lá cờ B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Lá cờ C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Lá cờ D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Lá cờ E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q05",
+   "canonical_hash": "ai-e2-q05",
+   "source_id": "src-ai-v1",
+   "source_question_number": 29,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "A mother dog and her baby weigh 25 kg together. The mother weighs 18 kg. How much does the baby weigh?",
+   "stem_vi": "Chó mẹ và chó con cùng nặng 25 kg. Riêng chó mẹ nặng 18 kg. Chó con nặng bao nhiêu ki-lô-gam?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Cả hai cùng nặng 25 kg, riêng chó mẹ nặng 18 kg.",
+    "Chó con nặng: 25 − 18 = 7 kg.",
+    "Kiểm tra: 18 + 7 = 25 kg."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_weight), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "7 kg",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8 kg",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "11 kg",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "17 kg",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "43 kg",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q06",
+   "canonical_hash": "ai-e2-q06",
+   "source_id": "src-ai-v1",
+   "source_question_number": 30,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Which ladybird must fly away so that the others have 14 dots altogether?",
+   "stem_vi": "Bọ rùa nào phải bay đi để những chú còn lại có tổng cộng 14 chấm?",
+   "image_url": "/question-images/ai/e2/q06.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Tổng số chấm của cả 5 chú: 4 + 2 + 5 + 3 + 6 = 20.",
+    "Muốn còn lại 14 chấm thì chú bay đi phải có 20 − 14 = 6 chấm.",
+    "Chỉ có bọ rùa E có 6 chấm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_ladybug_fly), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Bọ rùa A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Bọ rùa B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bọ rùa C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Bọ rùa D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Bọ rùa E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q07",
+   "canonical_hash": "ai-e2-q07",
+   "source_id": "src-ai-v1",
+   "source_question_number": 31,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "Na arranges shapes in a repeating pattern as shown. What is the 17th shape?",
+   "stem_vi": "Bạn Na xếp các hình theo một quy luật lặp lại như hình vẽ. Hình thứ 17 là hình gì?",
+   "image_url": "/question-images/ai/e2/q07.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Nhóm hình lặp lại gồm 4 hình: ngôi sao, ngôi sao, hình trái tim, hình tròn.",
+    "17 = 4 × 4 + 1, nên hình thứ 17 giống hình thứ 1 trong nhóm: ngôi sao.",
+    "Mẹo: tìm nhóm lặp lại trước, rồi chia vị trí cần tìm cho số hình trong nhóm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_pattern), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Hình tròn",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Hình tam giác",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Ngôi sao",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Hình vuông",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Trái tim",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q08",
+   "canonical_hash": "ai-e2-q08",
+   "source_id": "src-ai-v1",
+   "source_question_number": 32,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "How many circles are in the picture?",
+   "stem_vi": "Trong hình có bao nhiêu hình tròn?",
+   "image_url": "/question-images/ai/e2/q08.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Đếm hình tròn theo từng hàng để không bỏ sót: hàng 1 có 3, hàng 2 có 5, hàng 3 có 0.",
+    "Cộng lại: 3 + 5 + 0 = 8.",
+    "Mẹo: hình tròn dù bị xoay nghiêng hay lộn ngược vẫn là hình tròn."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_count_shapes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q09",
+   "canonical_hash": "ai-e2-q09",
+   "source_id": "src-ai-v1",
+   "source_question_number": 33,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "The table has 30 boxes (6 rows, 5 columns). After painting every box in row 2, row 5 and column B, column D, how many boxes are not painted?",
+   "stem_vi": "Bảng có 30 ô (6 hàng, 5 cột). Sau khi tô màu tất cả các ô ở hàng 2 và hàng 5 cùng với cột B và cột D, có bao nhiêu ô không được tô màu?",
+   "image_url": "/question-images/ai/e2/q09.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Các ô không bị tô phải nằm ở hàng không tô và cột không tô.",
+    "Số hàng không tô: 6 − 2 = 4; số cột không tô: 5 − 2 = 3.",
+    "Số ô không tô: 4 × 3 = 12.",
+    "Chú ý: ô nằm ở chỗ giao nhau của hàng và cột được tô chỉ tính một lần."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_paint), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q10",
+   "canonical_hash": "ai-e2-q10",
+   "source_id": "src-ai-v1",
+   "source_question_number": 34,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "The yellow tower is shorter than the red one. The pink tower is taller than the red but shorter than the green. The silver tower is shorter than the yellow. Which tower is the tallest?",
+   "stem_vi": "Tháp vàng thấp hơn tháp đỏ. Tháp hồng cao hơn tháp đỏ nhưng thấp hơn tháp xanh lá. Tháp bạc thấp hơn tháp vàng. Tháp nào cao nhất?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Xếp từ cao xuống thấp theo từng câu: hồng cao hơn đỏ, xanh lá cao hơn hồng → xanh lá > hồng > đỏ.",
+    "Vàng thấp hơn đỏ, bạc thấp hơn vàng → đỏ > vàng > bạc.",
+    "Ghép lại: xanh lá > hồng > đỏ > vàng > bạc. Tháp xanh lá cao nhất."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_order), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Tháp xanh lá",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Tháp hồng",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Tháp đỏ",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Tháp bạc",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Tháp vàng",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q11",
+   "canonical_hash": "ai-e2-q11",
+   "source_id": "src-ai-v1",
+   "source_question_number": 35,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "Grandma baked 17 cookies. She wants to share all of them equally among 5 grandchildren. At least how many more must she bake?",
+   "stem_vi": "Bà vừa nướng 17 chiếc bánh quy. Bà muốn chia hết số bánh cho 5 đứa cháu, mỗi cháu được số bánh như nhau. Bà cần nướng thêm ít nhất bao nhiêu chiếc?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Muốn chia đều cho 5 bạn thì số bánh phải chia hết cho 5.",
+    "Các số chia hết cho 5 gần 17: ... 15, 20, ... Số nhỏ nhất không ít hơn 17 là 20.",
+    "Cần nướng thêm: 20 − 17 = 3 chiếc (mỗi bạn được 4 chiếc)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_cookies), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q12",
+   "canonical_hash": "ai-e2-q12",
+   "source_id": "src-ai-v1",
+   "source_question_number": 36,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "May 1 is a Wednesday. What day of the week is May 20?",
+   "stem_vi": "Ngày 1 tháng 5 là Thứ Tư. Hỏi ngày 20 tháng 5 là thứ mấy?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Cứ 7 ngày thì thứ lặp lại. Các ngày 1, 8, 15, 22, 29 tháng 5 đều là Thứ Tư.",
+    "Ngày 15 là Thứ Tư; ngày 20 sau đó 5 ngày.",
+    "Đếm tiếp 5 ngày từ Thứ Tư: ngày 20 là Thứ Hai."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_calendar), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Thứ Hai",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Thứ Ba",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Chủ Nhật",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Thứ Tư",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Thứ Bảy",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q13",
+   "canonical_hash": "ai-e2-q13",
+   "source_id": "src-ai-v1",
+   "source_question_number": 37,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "Nam puts a border of small square tiles (orange) around a square. The picture shows the border around a square of side 2, using 12 tiles. How many tiles are needed for a square of side 5?",
+   "stem_vi": "Bạn Nam lát một đường viền bằng các viên gạch vuông nhỏ (màu cam) quanh một hình vuông. Hình vẽ cho thấy đường viền quanh hình vuông có cạnh dài 2 viên gạch, dùng 12 viên. Cần bao nhiêu viên gạch để lát đường viền quanh hình vuông có cạnh dài 5 viên gạch?",
+   "image_url": "/question-images/ai/e2/q13.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Ở hình mẫu (cạnh 2): mỗi cạnh có 2 viên, 4 cạnh là 4 × 2 = 8 viên, thêm 4 viên ở 4 góc: 12 viên.",
+    "Với hình vuông cạnh 5: 4 × 5 = 20 viên dọc 4 cạnh, thêm 4 viên góc.",
+    "Tổng: 20 + 4 = 24 viên gạch.",
+    "Chú ý: đừng quên 4 viên ở các góc."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_border), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "22",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "23",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "24",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "25",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q14",
+   "canonical_hash": "ai-e2-q14",
+   "source_id": "src-ai-v1",
+   "source_question_number": 38,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Each shape stands for a number; equal shapes are equal numbers. Which number replaces the “?”?",
+   "stem_vi": "Mỗi hình tượng trưng cho một số; các hình giống nhau là cùng một số. Số nào thay cho dấu “?”?",
+   "image_url": "/question-images/ai/e2/q14.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Dòng 1: 3 hình tròn = 12, nên 1 hình tròn = 4.",
+    "Dòng 2: 4 + hình vuông = 10, nên hình vuông = 10 − 4 = 6.",
+    "Dòng 3: 6 + 6 + 4 = 16."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_symbols), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "19",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q15",
+   "canonical_hash": "ai-e2-q15",
+   "source_id": "src-ai-v1",
+   "source_question_number": 39,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "A rabbit eats either 10 carrots or 2 cabbages each day. Last week (7 days) it ate 8 cabbages. How many carrots did it eat?",
+   "stem_vi": "Chú thỏ chỉ ăn cà rốt hoặc bắp cải. Mỗi ngày chú ăn hoặc 10 củ cà rốt, hoặc 2 cây bắp cải. Tuần trước (7 ngày) chú ăn tất cả 8 cây bắp cải. Tuần trước chú ăn bao nhiêu củ cà rốt?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Mỗi ngày ăn bắp cải thì ăn 2 cây. Cả tuần ăn 8 cây nên có 8 : 2 = 4 ngày ăn bắp cải.",
+    "Số ngày ăn cà rốt: 7 − 4 = 3 ngày.",
+    "Số cà rốt: 3 × 10 = 30 củ."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_rabbit), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "30",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "31",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "40",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "70",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q16",
+   "canonical_hash": "ai-e2-q16",
+   "source_id": "src-ai-v1",
+   "source_question_number": 40,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "The picture has 20 squares. Mai has coloured some of them. How many more must she colour so that exactly half are coloured?",
+   "stem_vi": "Hình có 20 ô vuông. Bạn Mai đã tô màu một số ô. Cần tô thêm bao nhiêu ô nữa để đúng một nửa số ô được tô màu?",
+   "image_url": "/question-images/ai/e2/q16.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Hình có 5 × 4 = 20 ô, một nửa là 20 : 2 = 10 ô.",
+    "Đã tô màu 4 ô.",
+    "Cần tô thêm: 10 − 4 = 6 ô."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_half_grid), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q17",
+   "canonical_hash": "ai-e2-q17",
+   "source_id": "src-ai-v1",
+   "source_question_number": 41,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "A yard has chickens and dogs, 12 animals and 34 legs in total. How many dogs are there?",
+   "stem_vi": "Trong sân có gà và chó, tất cả 12 con. Đếm được 34 cái chân. Có bao nhiêu con chó?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Giả sử cả 12 con đều là loại có 2 chân: khi đó có 2 × 12 = 24 chân.",
+    "Thực tế có 34 chân, thừa ra 34 − 24 = 10.",
+    "Mỗi con loại 4 chân làm thừa thêm 2, nên có 10 : 2 = 5 con loại 4 chân.",
+    "Đáp số: 5."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_two_kinds), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q18",
+   "canonical_hash": "ai-e2-q18",
+   "source_id": "src-ai-v1",
+   "source_question_number": 42,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Two identical trains with cars numbered 1 to 25 pass each other in opposite directions. When car 10 faces car 10, which car faces car 16?",
+   "stem_vi": "Hai đoàn tàu giống hệt nhau, mỗi đoàn có 25 toa đánh số từ 1 đến 25, chạy ngược chiều nhau trên hai đường ray song song. Khi toa số 10 của đoàn này đối diện toa số 10 của đoàn kia thì toa số 16 của đoàn này đối diện toa số mấy?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Hai đoàn tàu chạy ngược chiều nhau nên khi số toa ở đoàn này tăng thì số toa đối diện ở đoàn kia giảm.",
+    "Toa 10 đối diện toa 10: tổng hai số là 20. Mọi cặp toa đối diện đều có tổng bằng 20.",
+    "Toa 16 đối diện toa 20 − 16 = 4."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_trains), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q19",
+   "canonical_hash": "ai-e2-q19",
+   "source_id": "src-ai-v1",
+   "source_question_number": 43,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "Kien writes each of 1, 2, 4, 7, 8 in a circle so that the row and the column have the same sum. Which number is in the middle circle?",
+   "stem_vi": "Bạn Kiên viết mỗi số 1, 2, 4, 7, 8 vào một hình tròn sao cho tổng ba số ở hàng ngang bằng tổng ba số ở hàng dọc. Số nào được viết ở hình tròn chính giữa?",
+   "image_url": "/question-images/ai/e2/q19.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Hàng ngang và hàng dọc dùng chung số ở giữa, nên 4 số còn lại phải chia thành 2 cặp có tổng bằng nhau.",
+    "Thử từng số ở giữa: giữa là 1: còn 2, 4, 7, 8 → không chia được thành hai cặp bằng nhau; giữa là 2: còn 1, 4, 7, 8 → không chia được thành hai cặp bằng nhau; giữa là 4: còn 1, 2, 7, 8 → chia được; giữa là 7: còn 1, 2, 4, 8 → không chia được thành hai cặp bằng nhau; giữa là 8: còn 1, 2, 4, 7 → không chia được thành hai cặp bằng nhau.",
+    "Chỉ khi số giữa là 4: 1 + 8 = 2 + 7 = 9."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_cross), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q20",
+   "canonical_hash": "ai-e2-q20",
+   "source_id": "src-ai-v1",
+   "source_question_number": 44,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Whenever the witch has 3 apples she turns them into 1 banana, and 3 bananas into 1 apple. She starts with 5 apples and 2 bananas and keeps going until no change is possible. What does she end with?",
+   "stem_vi": "Mỗi khi bà phù thủy có 3 quả táo, bà biến chúng thành 1 quả chuối. Mỗi khi bà có 3 quả chuối, bà biến chúng thành 1 quả táo. Bà bắt đầu với 5 quả táo và 2 quả chuối và cứ biến đổi cho đến khi không biến được nữa. Cuối cùng bà còn lại gì?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Cứ có 3 quả táo thì đổi thành 1 quả chuối; có 3 quả chuối thì đổi thành 1 quả táo. Đổi đến khi không đổi được nữa.",
+    "Theo dõi: 5 quả táo và 2 quả chuối → 2 quả táo và 3 quả chuối → 3 quả táo → 1 quả chuối.",
+    "Cuối cùng bà còn 1 quả chuối."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_witch), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1 quả chuối",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "1 quả táo",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "2 quả chuối",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "1 quả táo và 1 quả chuối",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "2 quả táo",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q21",
+   "canonical_hash": "ai-e2-q21",
+   "source_id": "src-ai-v1",
+   "source_question_number": 45,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "measurement",
+   "stem": "A night train leaves at 8:15 in the evening and arrives at 6:40 the next morning. How long is the journey?",
+   "stem_vi": "Một chuyến tàu đêm khởi hành lúc 8 giờ 15 phút tối và đến nơi lúc 6 giờ 40 phút sáng hôm sau. Chuyến tàu đi hết bao lâu?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Từ 8 giờ 15 phút tối đến 12 giờ đêm: 3 giờ 45 phút.",
+    "Từ 12 giờ đêm đến 6 giờ 40 phút sáng: 6 giờ 40 phút.",
+    "Tổng: 3 giờ 45 phút + 6 giờ 40 phút = 10 giờ 25 phút.",
+    "Mẹo: chia chuyến đi thành hai đoạn – trước và sau nửa đêm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_timespan), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1 giờ 35 phút",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8 giờ 25 phút",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "9 giờ 25 phút",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10 giờ 15 phút",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "10 giờ 25 phút",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q22",
+   "canonical_hash": "ai-e2-q22",
+   "source_id": "src-ai-v1",
+   "source_question_number": 46,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "An, Binh and Chi picked 10 oranges, each at least 1 and all different. An picked the fewest. Chi picked twice as many as Binh. How many did Chi pick?",
+   "stem_vi": "Ba bạn An, Bình, Chi hái được tất cả 10 quả cam. Mỗi bạn hái được ít nhất 1 quả và không có hai bạn nào hái được số quả bằng nhau. An hái được ít nhất. Chi hái được gấp đôi Bình. Chi hái được bao nhiêu quả?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Chi gấp đôi Bình nên Bình + Chi = 3 phần (Bình 1 phần, Chi 2 phần), An = 10 − 3 phần.",
+    "Thử Bình = 1: Chi 2, An 7 – An không ít nhất. Bình = 2: Chi 4, An 4 – trùng nhau. Bình = 3: Chi 6, An 1 – đúng!",
+    "Vậy An 1, Bình 3, Chi 6 quả."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_split), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q23",
+   "canonical_hash": "ai-e2-q23",
+   "source_id": "src-ai-v1",
+   "source_question_number": 47,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "Bi walks from the entrance to the exit through the rooms (gaps in the walls are doors), visiting each room at most once and adding the numbers in the rooms. What is the largest possible total?",
+   "stem_vi": "Bé Bi đi từ cửa Vào đến cửa Ra qua các căn phòng. Hai phòng cạnh nhau chỉ thông nhau khi trên bức tường giữa chúng có chỗ hở (cửa). Mỗi phòng chỉ được đi qua một lần, và Bi cộng các số ở những phòng đã đi qua. Tổng lớn nhất Bi có thể được là bao nhiêu?",
+   "image_url": "/question-images/ai/e2/q23.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Chỉ đi được qua những chỗ hở trên tường (cửa). Mỗi phòng chỉ đi qua một lần.",
+    "Tổng tất cả các phòng là 38, nhưng không có đường nào đi qua hết mọi phòng.",
+    "Đường tốt nhất: 2 → 6 → 3 → 8 → 2, bỏ qua phòng 5, 1, 4, 7.",
+    "Tổng lớn nhất: 2 + 6 + 3 + 8 + 2 = 21."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_rooms), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "19",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "21",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "38",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e2-q24",
+   "canonical_hash": "ai-e2-q24",
+   "source_id": "src-ai-v1",
+   "source_question_number": 48,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "Children queue for the bus. The teacher stands exactly in the middle and is 9th from the front. How many people are in the queue?",
+   "stem_vi": "Các bạn xếp hàng lên xe buýt. Cô giáo đứng chính giữa hàng và là người thứ 9 tính từ đầu hàng. Hàng có bao nhiêu người?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Người đứng chính giữa là người thứ 9 tính từ đầu, nên phía trước có 8 người.",
+    "Đứng chính giữa nghĩa là phía sau cũng có 8 người.",
+    "Tổng: 8 + 1 + 8 = 17 người."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_middle), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q01",
+   "canonical_hash": "ai-e3-q01",
+   "source_id": "src-ai-v1",
+   "source_question_number": 49,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "A big square was made of 16 small squares (4 rows of 4). Some squares fell out. How many squares are missing?",
+   "stem_vi": "Một hình vuông lớn được ghép từ 16 ô vuông nhỏ (4 hàng, mỗi hàng 4 ô). Một số ô đã bị rơi mất, để lại các chỗ trống (ô viền nét đứt). Có bao nhiêu ô bị mất?",
+   "image_url": "/question-images/ai/e3/q01.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Hình vuông lớn có 4 hàng, mỗi hàng 4 ô, tất cả 4 × 4 = 16 ô.",
+    "Đếm số ô còn lại theo từng hàng: 3 + 3 + 3 + 2 = 11 ô.",
+    "Số ô bị mất: 16 − 11 = 5 ô."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_grid_missing), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q02",
+   "canonical_hash": "ai-e3-q02",
+   "source_id": "src-ai-v1",
+   "source_question_number": 50,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Which calculation gives the largest result that is still smaller than 20?",
+   "stem_vi": "Phép tính nào cho kết quả lớn nhất nhưng vẫn nhỏ hơn 20?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Tính từng phép: 9 + 9 = 18; 25 − 4 = 21; 30 − 10 = 20; 12 + 7 = 19; 6 + 11 = 17.",
+    "Loại các kết quả không nhỏ hơn 20.",
+    "Trong các kết quả còn lại, lớn nhất là 19 (phép tính 12 + 7)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_largest_below), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "9 + 9",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "25 − 4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "30 − 10",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "12 + 7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "6 + 11",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q03",
+   "canonical_hash": "ai-e3-q03",
+   "source_id": "src-ai-v1",
+   "source_question_number": 51,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "Tí is 6 years old. Her brother is 5 years older. What is the sum of their ages?",
+   "stem_vi": "Tí năm nay 6 tuổi. Anh trai của Tí hơn Tí 5 tuổi. Tổng số tuổi của hai anh em là bao nhiêu?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Tí 6 tuổi, anh trai hơn 5 tuổi nên anh 6 + 5 = 11 tuổi.",
+    "Tổng số tuổi hai anh em: 6 + 11 = 17 tuổi.",
+    "Chú ý: 11 là tuổi của anh, chưa phải tổng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_ages), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "22",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q04",
+   "canonical_hash": "ai-e3-q04",
+   "source_id": "src-ai-v1",
+   "source_question_number": 52,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "15 children stand in a line. Mai is 6th from the front and Hoa is 4th from the back. How many children stand between Mai and Hoa?",
+   "stem_vi": "Có 15 bạn nhỏ xếp thành một hàng. Mai đứng thứ 6 tính từ đầu hàng, Hoa đứng thứ 4 tính từ cuối hàng. Có bao nhiêu bạn đứng giữa Mai và Hoa?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Hàng có 15 bạn. Hoa đứng thứ 4 tính từ cuối, nên tính từ đầu hàng Hoa đứng thứ 15 − 4 + 1 = 12.",
+    "Mai đứng thứ 6. Các bạn đứng giữa ở các vị trí từ 7 đến 11.",
+    "Số bạn đứng giữa: 11 − 6 = 5 bạn.",
+    "Mẹo: vẽ một hàng chấm tròn và đánh số để dễ đếm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_queue), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q05",
+   "canonical_hash": "ai-e3-q05",
+   "source_id": "src-ai-v1",
+   "source_question_number": 53,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "The clock shows the time. What time will it be 30 minutes later?",
+   "stem_vi": "Đồng hồ chỉ giờ như hình. Sau 30 phút nữa thì đồng hồ chỉ mấy giờ?",
+   "image_url": "/question-images/ai/e3/q05.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Kim ngắn chỉ giờ, kim dài (màu đỏ) chỉ phút: đồng hồ đang chỉ 9 giờ 30 phút.",
+    "Thêm 30 phút: 9 giờ 30 phút + 30 phút = 10 giờ.",
+    "Mẹo: kim dài chỉ số 6 là 30 phút (rưỡi), chỉ số 12 là giờ đúng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_clock), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "8 giờ",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "9 giờ",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "9 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "10 giờ",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q06",
+   "canonical_hash": "ai-e3-q06",
+   "source_id": "src-ai-v1",
+   "source_question_number": 54,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "Na's card has exactly 3 triangles, and fewer circles than squares. Which card is Na's?",
+   "stem_vi": "Thẻ của Na có đúng 3 hình tam giác, và số hình tròn ít hơn số hình vuông. Thẻ nào là của Na?",
+   "image_url": "/question-images/ai/e3/q06.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Đếm từng loại hình: A: 2 tròn, 3 tam giác, 1 vuông; B: 1 tròn, 3 tam giác, 2 vuông; C: 1 tròn, 2 tam giác, 3 vuông; D: 2 tròn, 3 tam giác, 2 vuông; E: 1 tròn, 4 tam giác, 3 vuông.",
+    "Thẻ cần: đúng 3 hình tam giác, và số hình tròn nhỏ hơn số hình vuông.",
+    "Chỉ có thẻ B đúng cả hai điều kiện."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_attr), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Thẻ A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Thẻ B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Thẻ C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Thẻ D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Thẻ E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q07",
+   "canonical_hash": "ai-e3-q07",
+   "source_id": "src-ai-v1",
+   "source_question_number": 55,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "There are 6 ladybirds on a leaf. How many dots do they have altogether?",
+   "stem_vi": "Có 6 chú bọ rùa đậu trên lá. Tổng cộng các chú bọ rùa có bao nhiêu chấm?",
+   "image_url": "/question-images/ai/e3/q07.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Đếm số chấm trên từng chú bọ rùa: 6, 1, 5, 3, 2, 4.",
+    "Cộng lại: 6 + 1 + 5 + 3 + 2 + 4 = 21.",
+    "Mẹo: ghép các số thành cặp tròn chục (ví dụ 4 + 6 = 10) để cộng nhanh và ít nhầm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_dots), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "21",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "22",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "23",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q08",
+   "canonical_hash": "ai-e3-q08",
+   "source_id": "src-ai-v1",
+   "source_question_number": 56,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "Which box has the most squares?",
+   "stem_vi": "Hộp nào có nhiều hình vuông nhất?",
+   "image_url": "/question-images/ai/e3/q08.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Đếm hình vuông trong từng hộp: hộp A có 3, hộp B có 5, hộp C có 4, hộp D có 2, hộp E có 4.",
+    "Hộp B có nhiều hình vuông nhất (5).",
+    "Mẹo: chỉ đếm đúng loại hình được hỏi, bỏ qua các hình khác."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_most_shape), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Hộp A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Hộp B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Hộp C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Hộp D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Hộp E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q09",
+   "canonical_hash": "ai-e3-q09",
+   "source_id": "src-ai-v1",
+   "source_question_number": 57,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "Scales 1 and 2 are balanced. How many circles must go on the right pan so that scale 3 balances too?",
+   "stem_vi": "Cân 1 và cân 2 đang thăng bằng. Cần đặt bao nhiêu hình tròn lên đĩa bên phải để cân 3 cũng thăng bằng?",
+   "image_url": "/question-images/ai/e3/q09.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Cân 1: 1 hình vuông nặng bằng 2 hình tròn.",
+    "Cân 2: 1 hình tam giác nặng bằng 3 hình vuông và 1 hình tròn.",
+    "Đổi mỗi hình vuông thành 2 hình tròn: 3 hình vuông = 3 × 2 = 6 hình tròn.",
+    "Vậy 1 hình tam giác nặng bằng 6 + 1 = 7 hình tròn.",
+    "Mẹo: thay dần các hình nặng hơn bằng các hình nhỏ nhất."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_balance), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q10",
+   "canonical_hash": "ai-e3-q10",
+   "source_id": "src-ai-v1",
+   "source_question_number": 58,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Bin encodes letters with the board shown. For example, LUA has the code A2 B2 B1. Which word did Bin encode as D3 C3 C2?",
+   "stem_vi": "Bin mã hóa các chữ cái bằng bảng bên. Ví dụ, từ LUA có mã là A2 B2 B1. Bin đã mã hóa từ nào thành D3 C3 C2?",
+   "image_url": "/question-images/ai/e3/q10.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Mỗi mã gồm chữ của cột (A, B, C, D) và số của hàng (1, 2, 3, 4).",
+    "Giải mã từng phần: D3 → S; C3 → E; C2 → N.",
+    "Ghép lại được từ SEN."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_encode), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "SAN",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "SON",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "BEN",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "SEN",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "SET",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q11",
+   "canonical_hash": "ai-e3-q11",
+   "source_id": "src-ai-v1",
+   "source_question_number": 59,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "How many numbers from 10 to 50 are written using only the digits 0, 2, 4? (Digits may repeat.)",
+   "stem_vi": "Có bao nhiêu số từ 10 đến 50 chỉ được viết bằng các chữ số 0, 2, 4? (Mỗi chữ số có thể dùng nhiều lần.)",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Liệt kê các số từ 10 đến 50 chỉ dùng chữ số 0, 2, 4: 20, 22, 24, 40, 42, 44.",
+    "Đếm được 6 số.",
+    "Mẹo: liệt kê theo hàng chục (chục 1, chục 2, ...) để không bỏ sót."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_digits), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q12",
+   "canonical_hash": "ai-e3-q12",
+   "source_id": "src-ai-v1",
+   "source_question_number": 60,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "Ha puts 6 square cards together as shown. Wherever two cards share a whole side she uses one piece of tape. How many pieces of tape does she need?",
+   "stem_vi": "Bạn Hà ghép 6 tấm bìa hình vuông như hình. Ở mỗi chỗ hai tấm bìa chạm nhau bằng cả một cạnh, Hà dán một miếng băng dính. Hà cần bao nhiêu miếng băng dính?",
+   "image_url": "/question-images/ai/e3/q12.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Mỗi chỗ hai tấm bìa chạm nhau bằng một cạnh cần một miếng băng dính.",
+    "Đếm các cạnh chung nằm dọc (giữa hai tấm cạnh nhau theo hàng ngang): 2; các cạnh chung nằm ngang (giữa hai tấm trên – dưới): 3.",
+    "Tổng: 2 + 3 = 5 miếng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_glue), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "24",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q13",
+   "canonical_hash": "ai-e3-q13",
+   "source_id": "src-ai-v1",
+   "source_question_number": 61,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "Today the ages of Bo, Bi, Bống add up to 21. What will their ages add up to in 3 years?",
+   "stem_vi": "Hôm nay, tuổi của Bo, Bi và Bống cộng lại bằng 21. Sau 3 năm nữa, tổng số tuổi của 3 bạn là bao nhiêu?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Sau 3 năm, mỗi bạn đều thêm 3 tuổi.",
+    "Có 3 bạn nên tổng số tuổi tăng thêm 3 × 3 = 9.",
+    "Tổng số tuổi khi đó: 21 + 9 = 30.",
+    "Chú ý: không phải chỉ cộng thêm 3."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_ages_future), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "24",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "30",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "31",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "32",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "33",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q14",
+   "canonical_hash": "ai-e3-q14",
+   "source_id": "src-ai-v1",
+   "source_question_number": 62,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "An is taller than Binh. Chi is shorter than Binh. Dung is taller than An. Who is the shortest?",
+   "stem_vi": "An cao hơn Bình. Chi thấp hơn Bình. Dũng cao hơn An. Bạn nào thấp nhất?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Dũng cao hơn An, An cao hơn Bình → Dũng > An > Bình.",
+    "Chi thấp hơn Bình → Dũng > An > Bình > Chi.",
+    "Chi thấp nhất."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_order), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Chi",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "An",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bình",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Dũng",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Không xác định được",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q15",
+   "canonical_hash": "ai-e3-q15",
+   "source_id": "src-ai-v1",
+   "source_question_number": 63,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "Mum bakes 4 pizzas, each cut into 6 equal slices. 9 children each eat 2 slices. How many slices are left?",
+   "stem_vi": "Mẹ nướng 4 chiếc bánh pizza, mỗi chiếc cắt thành 6 miếng bằng nhau. Có 9 bạn nhỏ, mỗi bạn ăn 2 miếng. Hỏi còn lại bao nhiêu miếng bánh?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Số miếng bánh: 4 × 6 = 24 miếng.",
+    "9 bạn, mỗi bạn ăn 2 miếng: 9 × 2 = 18 miếng.",
+    "Còn lại: 24 − 18 = 6 miếng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_pizza), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q16",
+   "canonical_hash": "ai-e3-q16",
+   "source_id": "src-ai-v1",
+   "source_question_number": 64,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "Nam puts a border of small square tiles (orange) around a square. The picture shows the border around a square of side 3, using 16 tiles. How many tiles are needed for a square of side 6?",
+   "stem_vi": "Bạn Nam lát một đường viền bằng các viên gạch vuông nhỏ (màu cam) quanh một hình vuông. Hình vẽ cho thấy đường viền quanh hình vuông có cạnh dài 3 viên gạch, dùng 16 viên. Cần bao nhiêu viên gạch để lát đường viền quanh hình vuông có cạnh dài 6 viên gạch?",
+   "image_url": "/question-images/ai/e3/q16.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Ở hình mẫu (cạnh 3): mỗi cạnh có 3 viên, 4 cạnh là 4 × 3 = 12 viên, thêm 4 viên ở 4 góc: 16 viên.",
+    "Với hình vuông cạnh 6: 4 × 6 = 24 viên dọc 4 cạnh, thêm 4 viên góc.",
+    "Tổng: 24 + 4 = 28 viên gạch.",
+    "Chú ý: đừng quên 4 viên ở các góc."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_border), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "28",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "29",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "30",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "32",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "36",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q17",
+   "canonical_hash": "ai-e3-q17",
+   "source_id": "src-ai-v1",
+   "source_question_number": 65,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "A pen has hens and ducks. There are 3 times as many hens as ducks, and 12 more hens than ducks. How many birds are there?",
+   "stem_vi": "Trong chuồng có gà và vịt. Số gà gấp 3 lần số vịt, và gà nhiều hơn vịt 12 con. Trong chuồng có tất cả bao nhiêu con?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Nếu vịt là 1 phần thì gà là 3 phần; gà nhiều hơn 3 − 1 = 2 phần.",
+    "2 phần bằng 12 con, nên 1 phần là 12 : 2 = 6 con.",
+    "Vịt: 6 con, gà: 18 con. Tất cả: 6 + 18 = 24 con."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_ratio_diff), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "24",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "25",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "36",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q18",
+   "canonical_hash": "ai-e3-q18",
+   "source_id": "src-ai-v1",
+   "source_question_number": 66,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Trees are planted along both sides of a 30 m road, 5 m apart, with a tree at both ends on each side. How many trees are there?",
+   "stem_vi": "Dọc hai bên một con đường dài 30 m, người ta trồng cây cách đều nhau 5 m. Ở cả hai đầu đường, mỗi bên đều có một cây. Có tất cả bao nhiêu cây?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Mỗi bên đường dài 30 m, chia thành 30 : 5 = 6 khoảng.",
+    "Hai đầu đều có cây nên mỗi bên có 6 + 1 = 7 cây.",
+    "Hai bên đường: 7 × 2 = 14 cây."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_flags), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "13",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q19",
+   "canonical_hash": "ai-e3-q19",
+   "source_id": "src-ai-v1",
+   "source_question_number": 67,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "How many triangles are there in the picture?",
+   "stem_vi": "Có bao nhiêu hình tam giác trong hình vẽ?",
+   "image_url": "/question-images/ai/e3/q19.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Từ đỉnh trên có 5 đường đi xuống. Hai đường bất kỳ trong số đó cùng với một đường nằm ngang tạo thành một hình tam giác.",
+    "Số cách chọn 2 đường từ 5 đường: 4 + 3 + ... + 1 = 10.",
+    "Có 1 đường nằm ngang (kể cả cạnh đáy), nên có 10 × 1 = 10 hình tam giác.",
+    "Mẹo: đếm có hệ thống – tam giác nhỏ, rồi tam giác ghép từ 2, 3 phần..."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_triangles), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q20",
+   "canonical_hash": "ai-e3-q20",
+   "source_id": "src-ai-v1",
+   "source_question_number": 68,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Three frogs live in a pond. Each night exactly one frog sings to the other two. After 12 nights one frog has sung 5 times and another has listened to 9 songs. How many songs has the third frog listened to?",
+   "stem_vi": "Ba chú ếch sống trong một cái ao. Mỗi đêm, đúng một chú ếch hát một bài cho hai chú kia nghe. Sau 12 đêm, một chú ếch đã hát 5 lần, một chú khác đã nghe 9 bài hát. Chú ếch thứ ba đã nghe bao nhiêu bài hát?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Mỗi đêm có 1 chú hát, 2 chú nghe. Một chú nghe bài hát vào mọi đêm mà chú không hát.",
+    "Chú thứ hai nghe 9 bài nên chú hát 12 − 9 = 3 đêm.",
+    "Chú thứ nhất hát 5 đêm, nên chú thứ ba hát 12 − 5 − 3 = 4 đêm.",
+    "Chú thứ ba nghe vào các đêm còn lại: 12 − 4 = 8 bài."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_frogs), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q21",
+   "canonical_hash": "ai-e3-q21",
+   "source_id": "src-ai-v1",
+   "source_question_number": 69,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "measurement",
+   "stem": "A snail climbs a 12 m wall: up 4 m each day, down 2 m each night. Starting at the bottom on the morning of day 1, on which day does it reach the top?",
+   "stem_vi": "Một con ốc sên bò lên một bức tường cao 12 m. Ban ngày ốc bò lên được 4 m, ban đêm ốc tụt xuống 2 m. Bắt đầu từ chân tường vào sáng ngày thứ nhất, ốc lên tới đỉnh tường vào ngày thứ mấy?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Mỗi ngày ốc lên 4 m, mỗi đêm tụt 2 m. Nhưng ngày cuối cùng chạm đỉnh là xong, không tụt nữa.",
+    "Theo dõi từng ngày: ngày 1: lên 4 m, đêm tụt còn 2 m; ngày 2: lên 6 m, đêm tụt còn 4 m; ngày 3: lên 8 m, đêm tụt còn 6 m; ngày 4: lên 10 m, đêm tụt còn 8 m; ngày 5: bò lên tới 12 m, chạm đỉnh.",
+    "Ốc lên tới đỉnh vào ngày thứ 5 (không phải 12 : 2 = 6)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_snail), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q22",
+   "canonical_hash": "ai-e3-q22",
+   "source_id": "src-ai-v1",
+   "source_question_number": 70,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "Tom and Lily swap sweets. First Tom gives Lily as many sweets as Lily has. Then Lily gives Tom as many as Tom has. In the end Tom has 8 and Lily has 8. How many sweets did Tom have at the start?",
+   "stem_vi": "Tom và Lily trao đổi kẹo. Đầu tiên Tom cho Lily số kẹo bằng số kẹo Lily đang có. Sau đó Lily cho Tom số kẹo bằng số kẹo Tom đang có. Cuối cùng Tom có 8 viên và Lily có 8 viên. Lúc đầu Tom có bao nhiêu viên kẹo?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Đi ngược từ cuối lên đầu.",
+    "Lần 2: Lily cho Tom số kẹo bằng số kẹo Tom đang có, tức là Tom được gấp đôi. Trước lần 2: Tom có 8 : 2 = 4, Lily có 8 + 4 = 12.",
+    "Lần 1: Tom cho Lily số kẹo bằng số kẹo Lily đang có, tức là Lily được gấp đôi. Trước lần 1: Lily có 12 : 2 = 6, Tom có 4 + 6 = 10.",
+    "Lúc đầu Tom có 10 viên, Lily có 6 viên. Kiểm tra lại theo chiều xuôi là đúng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_candy), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q23",
+   "canonical_hash": "ai-e3-q23",
+   "source_id": "src-ai-v1",
+   "source_question_number": 71,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "Put each of the digits 1, 2, 4, 5 in a box of □□ + □□ to make the largest sum. What is it?",
+   "stem_vi": "Đặt mỗi chữ số 1, 2, 4, 5 vào một ô trong phép tính □□ + □□ sao cho tổng lớn nhất. Tổng lớn nhất là bao nhiêu?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Chữ số ở hàng chục có giá trị gấp 10 lần, nên đặt hai chữ số lớn nhất ở hàng chục.",
+    "Hàng chục: 5 và 4; hàng đơn vị: 2 và 1.",
+    "Ví dụ: 41 + 52 = 93 (đổi chỗ hai chữ số đơn vị tổng vẫn như vậy)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_digits), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "84",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "93",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "94",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "95",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "102",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e3-q24",
+   "canonical_hash": "ai-e3-q24",
+   "source_id": "src-ai-v1",
+   "source_question_number": 72,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Two identical trains with cars numbered 1 to 20 pass each other in opposite directions. When car 7 faces car 7, which car faces car 11?",
+   "stem_vi": "Hai đoàn tàu giống hệt nhau, mỗi đoàn có 20 toa đánh số từ 1 đến 20, chạy ngược chiều nhau trên hai đường ray song song. Khi toa số 7 của đoàn này đối diện toa số 7 của đoàn kia thì toa số 11 của đoàn này đối diện toa số mấy?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Hai đoàn tàu chạy ngược chiều nhau nên khi số toa ở đoàn này tăng thì số toa đối diện ở đoàn kia giảm.",
+    "Toa 7 đối diện toa 7: tổng hai số là 14. Mọi cặp toa đối diện đều có tổng bằng 14.",
+    "Toa 11 đối diện toa 14 − 11 = 3."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_trains), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q01",
+   "canonical_hash": "ai-e4-q01",
+   "source_id": "src-ai-v1",
+   "source_question_number": 73,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "How many stars are in the picture?",
+   "stem_vi": "Trong hình có bao nhiêu ngôi sao?",
+   "image_url": "/question-images/ai/e4/q01.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Đếm ngôi sao theo từng hàng để không bỏ sót: hàng 1 có 3, hàng 2 có 3, hàng 3 có 0.",
+    "Cộng lại: 3 + 3 + 0 = 6.",
+    "Mẹo: ngôi sao dù bị xoay nghiêng hay lộn ngược vẫn là ngôi sao."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_count_shapes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q02",
+   "canonical_hash": "ai-e4-q02",
+   "source_id": "src-ai-v1",
+   "source_question_number": 74,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Hùng has 12 stickers and Dũng has 30. How many stickers must Dũng give Hùng so they have the same number?",
+   "stem_vi": "Hùng có 12 nhãn dán, Dũng có 30 nhãn dán. Dũng cần cho Hùng bao nhiêu nhãn dán để hai bạn có số nhãn dán bằng nhau?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Hai bạn có tất cả 12 + 30 = 42 nhãn dán.",
+    "Chia đều thì mỗi bạn có 42 : 2 = 21 nhãn dán.",
+    "Dũng có 30, cần đưa cho Hùng: 30 − 21 = 9 nhãn dán.",
+    "Chú ý: không phải 30 − 12 = 18, vì khi Dũng đưa đi thì Dũng cũng bị bớt."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_equalize), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q03",
+   "canonical_hash": "ai-e4-q03",
+   "source_id": "src-ai-v1",
+   "source_question_number": 75,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "Stairs are numbered 0 to 10. The kangaroo (K) is on step 0 and the rabbit (T) on step 10. Each turn the kangaroo goes up 3 steps while the rabbit goes down 2. On which step do they meet?",
+   "stem_vi": "Cầu thang có các bậc được đánh số từ 0 đến 10. Chuột túi (K) đứng ở bậc 0, thỏ (T) đứng ở bậc 10. Mỗi lượt, chuột túi đi lên 3 bậc và cùng lúc thỏ đi xuống 2 bậc. Hai bạn gặp nhau ở bậc nào?",
+   "image_url": "/question-images/ai/e4/q03.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Mỗi lượt hai bạn lại gần nhau thêm 3 + 2 = 5 bậc.",
+    "Theo dõi từng lượt: lượt 1: chuột túi ở bậc 3, thỏ ở bậc 8; lượt 2: chuột túi ở bậc 6, thỏ ở bậc 6.",
+    "Sau 2 lượt cả hai cùng ở bậc 6."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_stairs), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q04",
+   "canonical_hash": "ai-e4-q04",
+   "source_id": "src-ai-v1",
+   "source_question_number": 76,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "Na arranges shapes in a repeating pattern as shown. What is the 23rd shape?",
+   "stem_vi": "Bạn Na xếp các hình theo một quy luật lặp lại như hình vẽ. Hình thứ 23 là hình gì?",
+   "image_url": "/question-images/ai/e4/q04.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Nhóm hình lặp lại gồm 5 hình: hình trái tim, hình vuông, hình vuông, hình tam giác, hình tròn.",
+    "23 = 5 × 4 + 3, nên hình thứ 23 giống hình thứ 3 trong nhóm: hình vuông.",
+    "Mẹo: tìm nhóm lặp lại trước, rồi chia vị trí cần tìm cho số hình trong nhóm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_pattern), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Hình vuông",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Hình tròn",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Hình tam giác",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Ngôi sao",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Trái tim",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q05",
+   "canonical_hash": "ai-e4-q05",
+   "source_id": "src-ai-v1",
+   "source_question_number": 77,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "This is Grandpa's birthday cake. A big candle stands for 10 years and a small one for 1 year. How old is Grandpa?",
+   "stem_vi": "Đây là bánh sinh nhật của ông. Mỗi cây nến to là 10 tuổi, mỗi cây nến nhỏ là 1 tuổi. Ông bao nhiêu tuổi?",
+   "image_url": "/question-images/ai/e4/q05.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Có 7 cây nến to (mỗi cây 10 tuổi) → 7 × 10 = 70 tuổi.",
+    "Có 4 cây nến nhỏ (mỗi cây 1 tuổi) → 4 tuổi.",
+    "Ông có 70 + 4 = 74 tuổi.",
+    "Chú ý: đếm riêng nến to và nến nhỏ, đừng đảo hàng chục với hàng đơn vị."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_cake), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "47",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "74",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "75",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "76",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "84",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q06",
+   "canonical_hash": "ai-e4-q06",
+   "source_id": "src-ai-v1",
+   "source_question_number": 78,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Which ladybird must fly away so that the others have 16 dots altogether?",
+   "stem_vi": "Bọ rùa nào phải bay đi để những chú còn lại có tổng cộng 16 chấm?",
+   "image_url": "/question-images/ai/e4/q06.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Tổng số chấm của cả 5 chú: 5 + 4 + 3 + 6 + 2 = 20.",
+    "Muốn còn lại 16 chấm thì chú bay đi phải có 20 − 16 = 4 chấm.",
+    "Chỉ có bọ rùa B có 4 chấm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_ladybug_fly), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Bọ rùa A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Bọ rùa B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bọ rùa C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Bọ rùa D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Bọ rùa E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q07",
+   "canonical_hash": "ai-e4-q07",
+   "source_id": "src-ai-v1",
+   "source_question_number": 79,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "The day before yesterday was Friday. What day will it be the day after tomorrow?",
+   "stem_vi": "Hôm kia là Thứ Sáu. Hỏi ngày kia là thứ mấy?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Hôm kia là 2 ngày trước hôm nay, nên hôm nay là Chủ Nhật.",
+    "Ngày kia là 2 ngày sau hôm nay: Thứ Ba.",
+    "Mẹo: từ hôm kia đến ngày kia cách nhau 4 ngày."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_day), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Thứ Hai",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Thứ Tư",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Thứ Ba",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Thứ Năm",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Chủ Nhật",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q08",
+   "canonical_hash": "ai-e4-q08",
+   "source_id": "src-ai-v1",
+   "source_question_number": 80,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "A big square was made of 25 small squares (5 rows of 5). Some squares fell out. How many squares are missing?",
+   "stem_vi": "Một hình vuông lớn được ghép từ 25 ô vuông nhỏ (5 hàng, mỗi hàng 5 ô). Một số ô đã bị rơi mất, để lại các chỗ trống (ô viền nét đứt). Có bao nhiêu ô bị mất?",
+   "image_url": "/question-images/ai/e4/q08.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Hình vuông lớn có 5 hàng, mỗi hàng 5 ô, tất cả 5 × 5 = 25 ô.",
+    "Đếm số ô còn lại theo từng hàng: 4 + 3 + 4 + 4 + 4 = 19 ô.",
+    "Số ô bị mất: 25 − 19 = 6 ô."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_grid_missing), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q09",
+   "canonical_hash": "ai-e4-q09",
+   "source_id": "src-ai-v1",
+   "source_question_number": 81,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "The picture has 24 squares. Mai has coloured some of them. How many more must she colour so that exactly half are coloured?",
+   "stem_vi": "Hình có 24 ô vuông. Bạn Mai đã tô màu một số ô. Cần tô thêm bao nhiêu ô nữa để đúng một nửa số ô được tô màu?",
+   "image_url": "/question-images/ai/e4/q09.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Hình có 3 × 8 = 24 ô, một nửa là 24 : 2 = 12 ô.",
+    "Đã tô màu 7 ô.",
+    "Cần tô thêm: 12 − 7 = 5 ô."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_half_grid), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q10",
+   "canonical_hash": "ai-e4-q10",
+   "source_id": "src-ai-v1",
+   "source_question_number": 82,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Each shape stands for a number; equal shapes are equal numbers. Which number replaces the “?”?",
+   "stem_vi": "Mỗi hình tượng trưng cho một số; các hình giống nhau là cùng một số. Số nào thay cho dấu “?”?",
+   "image_url": "/question-images/ai/e4/q10.svg",
+   "correct_option": "D",
+   "explanation": [
+    "3 hình trái tim bằng 12, nên 1 hình trái tim = 12 : 3 = 4.",
+    "2 hình tròn bằng 14, nên 1 hình tròn = 14 : 2 = 7.",
+    "Thay vào dòng cuối: 4 + 4 + 7 = 15."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_symbols), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "13",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q11",
+   "canonical_hash": "ai-e4-q11",
+   "source_id": "src-ai-v1",
+   "source_question_number": 83,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "Grandma baked 38 cookies. She wants to share all of them equally among 7 grandchildren. At least how many more must she bake?",
+   "stem_vi": "Bà vừa nướng 38 chiếc bánh quy. Bà muốn chia hết số bánh cho 7 đứa cháu, mỗi cháu được số bánh như nhau. Bà cần nướng thêm ít nhất bao nhiêu chiếc?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Muốn chia đều cho 7 bạn thì số bánh phải chia hết cho 7.",
+    "Các số chia hết cho 7 gần 38: ... 35, 42, ... Số nhỏ nhất không ít hơn 38 là 42.",
+    "Cần nướng thêm: 42 − 38 = 4 chiếc (mỗi bạn được 6 chiếc)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_cookies), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q12",
+   "canonical_hash": "ai-e4-q12",
+   "source_id": "src-ai-v1",
+   "source_question_number": 84,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "October 1 is a Sunday. What day of the week is October 25?",
+   "stem_vi": "Ngày 1 tháng 10 là Chủ Nhật. Hỏi ngày 25 tháng 10 là thứ mấy?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Cứ 7 ngày thì thứ lặp lại. Các ngày 1, 8, 15, 22, 29 tháng 10 đều là Chủ Nhật.",
+    "Ngày 22 là Chủ Nhật; ngày 25 sau đó 3 ngày.",
+    "Đếm tiếp 3 ngày từ Chủ Nhật: ngày 25 là Thứ Tư."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_calendar), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Thứ Tư",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Thứ Năm",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Thứ Ba",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Thứ Sáu",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Thứ Hai",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q13",
+   "canonical_hash": "ai-e4-q13",
+   "source_id": "src-ai-v1",
+   "source_question_number": 85,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "The table has 30 boxes (5 rows, 6 columns). After painting every box in row 1, row 4, row 5 and column C, how many boxes are not painted?",
+   "stem_vi": "Bảng có 30 ô (5 hàng, 6 cột). Sau khi tô màu tất cả các ô ở hàng 1, hàng 4 và hàng 5 cùng với cột C, có bao nhiêu ô không được tô màu?",
+   "image_url": "/question-images/ai/e4/q13.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Các ô không bị tô phải nằm ở hàng không tô và cột không tô.",
+    "Số hàng không tô: 5 − 3 = 2; số cột không tô: 6 − 1 = 5.",
+    "Số ô không tô: 2 × 5 = 10.",
+    "Chú ý: ô nằm ở chỗ giao nhau của hàng và cột được tô chỉ tính một lần."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_paint), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "16",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "23",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q14",
+   "canonical_hash": "ai-e4-q14",
+   "source_id": "src-ai-v1",
+   "source_question_number": 86,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Bin encodes letters with the board shown. For example, MUA has the code B3 C3 B1. Which word did Bin encode as D3 A2 B2 A1?",
+   "stem_vi": "Bin mã hóa các chữ cái bằng bảng bên. Ví dụ, từ MUA có mã là B3 C3 B1. Bin đã mã hóa từ nào thành D3 A2 B2 A1?",
+   "image_url": "/question-images/ai/e4/q14.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Mỗi mã gồm chữ của cột (A, B, C, D) và số của hàng (1, 2, 3, 4).",
+    "Giải mã từng phần: D3 → B; A2 → O; B2 → N; A1 → G.",
+    "Ghép lại được từ BONG."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_encode), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "BONT",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "BANG",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "LONG",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "BOGN",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "BONG",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q15",
+   "canonical_hash": "ai-e4-q15",
+   "source_id": "src-ai-v1",
+   "source_question_number": 87,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "It is now 10:30. What time will it be 2 hours 30 minutes later?",
+   "stem_vi": "Bây giờ là 10 giờ 30 phút. Sau 2 giờ 30 phút nữa là mấy giờ?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Thêm 2 giờ: 10 giờ 30 phút → 12 giờ 30 phút.",
+    "Thêm tiếp 30 phút: 12 giờ 30 phút → 1 giờ.",
+    "Chú ý: sau 12 giờ đồng hồ quay lại 1 giờ."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_time), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "8 giờ",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "11 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "12 giờ",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "12 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "1 giờ",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q16",
+   "canonical_hash": "ai-e4-q16",
+   "source_id": "src-ai-v1",
+   "source_question_number": 88,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "Ha puts 7 square cards together as shown. Wherever two cards share a whole side she uses one piece of tape. How many pieces of tape does she need?",
+   "stem_vi": "Bạn Hà ghép 7 tấm bìa hình vuông như hình. Ở mỗi chỗ hai tấm bìa chạm nhau bằng cả một cạnh, Hà dán một miếng băng dính. Hà cần bao nhiêu miếng băng dính?",
+   "image_url": "/question-images/ai/e4/q16.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Mỗi chỗ hai tấm bìa chạm nhau bằng một cạnh cần một miếng băng dính.",
+    "Đếm các cạnh chung nằm dọc (giữa hai tấm cạnh nhau theo hàng ngang): 4; các cạnh chung nằm ngang (giữa hai tấm trên – dưới): 4.",
+    "Tổng: 4 + 4 = 8 miếng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_glue), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q17",
+   "canonical_hash": "ai-e4-q17",
+   "source_id": "src-ai-v1",
+   "source_question_number": 89,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "Nam writes the numbers 1 to 10 on the board, erases some, and adds the rest to get 20. At most how many numbers are left?",
+   "stem_vi": "Nam viết các số từ 1 đến 10 lên bảng. Nam xóa đi một số số rồi cộng các số còn lại, được tổng bằng 20. Trên bảng còn lại nhiều nhất bao nhiêu số?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Muốn còn lại nhiều số nhất thì phải giữ các số nhỏ nhất.",
+    "Nếu giữ 6 số thì tổng nhỏ nhất là 1 + 2 + ... + 6 = 21 > 20, không được.",
+    "Giữ 5 số được: ví dụ 1 + 2 + 3 + 4 + 10 = 20.",
+    "Vậy còn lại nhiều nhất 5 số."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_erase), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q18",
+   "canonical_hash": "ai-e4-q18",
+   "source_id": "src-ai-v1",
+   "source_question_number": 90,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "An, Binh, Chi, Dung and Em share a birthday; each cake shows the child's age. Binh is 3 years older than An. Chi is younger than An. Dung is 2 years younger than Binh. Which cake is Em's?",
+   "stem_vi": "Năm bạn An, Bình, Chi, Dung, Em có cùng ngày sinh nhật; mỗi bạn có một chiếc bánh với cây nến ghi số tuổi. Bình hơn An 3 tuổi. Chi nhỏ tuổi hơn An. Dung kém Bình 2 tuổi. Bánh nào là của Em?",
+   "image_url": "/question-images/ai/e4/q18.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Chi nhỏ hơn An nên An không thể 4 tuổi. Bình = An + 3 ≤ 8 nên An ≤ 5. Vậy An 5 tuổi, Bình 8 tuổi.",
+    "Dung = Bình − 2 = 6 tuổi. Chi nhỏ hơn An: Chi 4 tuổi.",
+    "Tuổi còn lại là 7: bánh của Em có số 7."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_age_cakes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Bánh A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Bánh B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bánh C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Bánh D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Bánh E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q19",
+   "canonical_hash": "ai-e4-q19",
+   "source_id": "src-ai-v1",
+   "source_question_number": 91,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "A mouse goes from S to Đ, each step moving one square right or down, never onto a grey rock. How many different routes are there?",
+   "stem_vi": "Chú chuột đi từ ô S đến ô Đ. Mỗi bước chú chỉ được đi sang phải hoặc đi xuống một ô, và không được đi vào ô có đá (màu xám). Có bao nhiêu đường đi khác nhau?",
+   "image_url": "/question-images/ai/e4/q19.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Vì chỉ được đi sang phải hoặc đi xuống, số cách đến một ô = số cách đến ô bên trái + số cách đến ô bên trên.",
+    "Ô có đá ghi 0 cách. Điền dần từ ô S: 1 1 1 1 | 1 2 x 1 | x 2 2 3 | 0 2 4 7 (mỗi hàng cách nhau bởi |, x là ô đá).",
+    "Ô Đ có 7 cách."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_grid_paths), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q20",
+   "canonical_hash": "ai-e4-q20",
+   "source_id": "src-ai-v1",
+   "source_question_number": 92,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Whenever the witch has 3 apples she turns them into 1 banana, and 3 bananas into 1 apple. She starts with 7 apples and 0 bananas and keeps going until no change is possible. What does she end with?",
+   "stem_vi": "Mỗi khi bà phù thủy có 3 quả táo, bà biến chúng thành 1 quả chuối. Mỗi khi bà có 3 quả chuối, bà biến chúng thành 1 quả táo. Bà bắt đầu với 7 quả táo và cứ biến đổi cho đến khi không biến được nữa. Cuối cùng bà còn lại gì?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Cứ có 3 quả táo thì đổi thành 1 quả chuối; có 3 quả chuối thì đổi thành 1 quả táo. Đổi đến khi không đổi được nữa.",
+    "Theo dõi: 7 quả táo → 4 quả táo và 1 quả chuối → 1 quả táo và 2 quả chuối.",
+    "Cuối cùng bà còn 1 quả táo và 2 quả chuối."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_witch), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1 quả táo",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "1 quả táo và 2 quả chuối",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "1 quả chuối",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "2 quả chuối",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "1 quả táo và 1 quả chuối",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q21",
+   "canonical_hash": "ai-e4-q21",
+   "source_id": "src-ai-v1",
+   "source_question_number": 93,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "measurement",
+   "stem": "A night train leaves at 7:30 in the evening and arrives at 5:50 the next morning. How long is the journey?",
+   "stem_vi": "Một chuyến tàu đêm khởi hành lúc 7 giờ 30 phút tối và đến nơi lúc 5 giờ 50 phút sáng hôm sau. Chuyến tàu đi hết bao lâu?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Từ 7 giờ 30 phút tối đến 12 giờ đêm: 4 giờ 30 phút.",
+    "Từ 12 giờ đêm đến 5 giờ 50 phút sáng: 5 giờ 50 phút.",
+    "Tổng: 4 giờ 30 phút + 5 giờ 50 phút = 10 giờ 20 phút.",
+    "Mẹo: chia chuyến đi thành hai đoạn – trước và sau nửa đêm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_timespan), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "9 giờ 20 phút",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "10 giờ 20 phút",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11 giờ 20 phút",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12 giờ 20 phút",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q22",
+   "canonical_hash": "ai-e4-q22",
+   "source_id": "src-ai-v1",
+   "source_question_number": 94,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "A bike park has 9 bicycles and tricycles with 22 wheels in total. How many tricycles are there?",
+   "stem_vi": "Ở bãi giữ xe có 9 chiếc xe gồm xe đạp (2 bánh) và xe ba bánh. Đếm được tất cả 22 bánh xe. Có bao nhiêu chiếc xe ba bánh?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Giả sử cả 9 chiếc xe đều là loại có 2 bánh: khi đó có 2 × 9 = 18 bánh.",
+    "Thực tế có 22 bánh, thừa ra 22 − 18 = 4.",
+    "Mỗi chiếc xe loại 3 bánh làm thừa thêm 1, nên có 4 : 1 = 4 chiếc xe loại 3 bánh.",
+    "Đáp số: 4."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_two_kinds), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "13",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q23",
+   "canonical_hash": "ai-e4-q23",
+   "source_id": "src-ai-v1",
+   "source_question_number": 95,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "Kien writes each of 1, 4, 5, 6, 8 in a circle so that the row and the column have the same sum. Which number is in the middle circle?",
+   "stem_vi": "Bạn Kiên viết mỗi số 1, 4, 5, 6, 8 vào một hình tròn sao cho tổng ba số ở hàng ngang bằng tổng ba số ở hàng dọc. Số nào được viết ở hình tròn chính giữa?",
+   "image_url": "/question-images/ai/e4/q23.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Hàng ngang và hàng dọc dùng chung số ở giữa, nên 4 số còn lại phải chia thành 2 cặp có tổng bằng nhau.",
+    "Thử từng số ở giữa: giữa là 1: còn 4, 5, 6, 8 → không chia được thành hai cặp bằng nhau; giữa là 4: còn 1, 5, 6, 8 → không chia được thành hai cặp bằng nhau; giữa là 5: còn 1, 4, 6, 8 → không chia được thành hai cặp bằng nhau; giữa là 6: còn 1, 4, 5, 8 → chia được; giữa là 8: còn 1, 4, 5, 6 → không chia được thành hai cặp bằng nhau.",
+    "Chỉ khi số giữa là 6: 1 + 8 = 4 + 5 = 9."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_cross), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e4-q24",
+   "canonical_hash": "ai-e4-q24",
+   "source_id": "src-ai-v1",
+   "source_question_number": 96,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "6 friends meet and each shakes hands with every other friend exactly once. How many handshakes are there?",
+   "stem_vi": "Có 6 bạn gặp nhau. Mỗi bạn bắt tay mỗi bạn khác đúng một lần. Có tất cả bao nhiêu cái bắt tay?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Bạn thứ nhất bắt tay 5 bạn còn lại.",
+    "Bạn thứ hai bắt tay thêm 4 bạn mới (đã bắt tay bạn thứ nhất rồi), cứ thế tiếp tục.",
+    "Tổng: 5 + 4 + 3 + 2 + 1 = 15 cái bắt tay.",
+    "Chú ý: không phải 6 × 5 = 30, vì mỗi cái bắt tay bị đếm hai lần."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_handshake), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "13",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "30",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q01",
+   "canonical_hash": "ai-e5-q01",
+   "source_id": "src-ai-v1",
+   "source_question_number": 97,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "Which box has the most triangles?",
+   "stem_vi": "Hộp nào có nhiều hình tam giác nhất?",
+   "image_url": "/question-images/ai/e5/q01.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Đếm hình tam giác trong từng hộp: hộp A có 5, hộp B có 3, hộp C có 7, hộp D có 4, hộp E có 6.",
+    "Hộp C có nhiều hình tam giác nhất (7).",
+    "Mẹo: chỉ đếm đúng loại hình được hỏi, bỏ qua các hình khác."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_most_shape), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Hộp A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Hộp B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Hộp C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Hộp D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Hộp E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q02",
+   "canonical_hash": "ai-e5-q02",
+   "source_id": "src-ai-v1",
+   "source_question_number": 98,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Which number is exactly halfway between 24 and 52?",
+   "stem_vi": "Số nào nằm chính giữa hai số 24 và 52 trên tia số?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Khoảng cách từ 24 đến 52 là 52 − 24 = 28.",
+    "Số chính giữa cách mỗi đầu một nửa khoảng đó: 28 : 2 = 14.",
+    "Số cần tìm: 24 + 14 = 38 (kiểm tra: 38 + 14 = 52)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_midpoint), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "28",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "36",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "37",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "38",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q03",
+   "canonical_hash": "ai-e5-q03",
+   "source_id": "src-ai-v1",
+   "source_question_number": 99,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "A mother bear and her baby weigh 95 kg together. The mother weighs 78 kg. How much does the baby weigh?",
+   "stem_vi": "Gấu mẹ và gấu con cùng nặng 95 kg. Riêng gấu mẹ nặng 78 kg. Gấu con nặng bao nhiêu ki-lô-gam?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Cả hai cùng nặng 95 kg, riêng gấu mẹ nặng 78 kg.",
+    "Gấu con nặng: 95 − 78 = 17 kg.",
+    "Kiểm tra: 78 + 17 = 95 kg."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_weight), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "17 kg",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "18 kg",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "27 kg",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "61 kg",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "173 kg",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q04",
+   "canonical_hash": "ai-e5-q04",
+   "source_id": "src-ai-v1",
+   "source_question_number": 100,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "14 children stand in a line. Bin is 3rd from the front and Na is 5th from the back. How many children stand between Bin and Na?",
+   "stem_vi": "Có 14 bạn nhỏ xếp thành một hàng. Bin đứng thứ 3 tính từ đầu hàng, Na đứng thứ 5 tính từ cuối hàng. Có bao nhiêu bạn đứng giữa Bin và Na?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Hàng có 14 bạn. Na đứng thứ 5 tính từ cuối, nên tính từ đầu hàng Na đứng thứ 14 − 5 + 1 = 10.",
+    "Bin đứng thứ 3. Các bạn đứng giữa ở các vị trí từ 4 đến 9.",
+    "Số bạn đứng giữa: 9 − 3 = 6 bạn.",
+    "Mẹo: vẽ một hàng chấm tròn và đánh số để dễ đếm."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_queue), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q05",
+   "canonical_hash": "ai-e5-q05",
+   "source_id": "src-ai-v1",
+   "source_question_number": 101,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "measurement",
+   "stem": "The clock shows the time. What time will it be 1 hour 30 minutes later?",
+   "stem_vi": "Đồng hồ chỉ giờ như hình. Sau 1 giờ 30 phút nữa thì đồng hồ chỉ mấy giờ?",
+   "image_url": "/question-images/ai/e5/q05.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Kim ngắn chỉ giờ, kim dài (màu đỏ) chỉ phút: đồng hồ đang chỉ 11 giờ.",
+    "Thêm 1 giờ 30 phút: 11 giờ + 1 giờ 30 phút = 12 giờ 30 phút.",
+    "Mẹo: kim dài chỉ số 6 là 30 phút (rưỡi), chỉ số 12 là giờ đúng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_clock), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "11 giờ",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "12 giờ",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "12 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "1 giờ",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "1 giờ 30 phút",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q06",
+   "canonical_hash": "ai-e5-q06",
+   "source_id": "src-ai-v1",
+   "source_question_number": 102,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "logic",
+   "stem": "Tu's picture has 6 shapes in total, with more circles than triangles. Which picture is Tu's?",
+   "stem_vi": "Bức tranh của Tú có tất cả 6 hình, trong đó số hình tròn nhiều hơn số hình tam giác. Bức tranh nào là của Tú?",
+   "image_url": "/question-images/ai/e5/q06.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Đếm từng loại hình: A: 2 tròn, 2 tam giác, 2 vuông; B: 3 tròn, 2 tam giác, 2 vuông; C: 1 tròn, 3 tam giác, 2 vuông; D: 3 tròn, 2 tam giác, 1 vuông; E: 4 tròn, 1 tam giác, 2 vuông.",
+    "Tranh cần: tổng cộng đúng 6 hình, và số hình tròn nhiều hơn số hình tam giác.",
+    "Chỉ có tranh D đúng cả hai điều kiện."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_attr), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Tranh A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Tranh B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Tranh C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Tranh D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Tranh E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q07",
+   "canonical_hash": "ai-e5-q07",
+   "source_id": "src-ai-v1",
+   "source_question_number": 103,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "arithmetic",
+   "stem": "Which calculation gives the largest result that is still smaller than 30?",
+   "stem_vi": "Phép tính nào cho kết quả lớn nhất nhưng vẫn nhỏ hơn 30?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Tính từng phép: 41 − 10 = 31; 16 + 13 = 29; 18 + 9 = 27; 35 − 5 = 30; 22 + 6 = 28.",
+    "Loại các kết quả không nhỏ hơn 30.",
+    "Trong các kết quả còn lại, lớn nhất là 29 (phép tính 16 + 13)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_largest_below), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "41 − 10",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "16 + 13",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "18 + 9",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "35 − 5",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "22 + 6",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q08",
+   "canonical_hash": "ai-e5-q08",
+   "source_id": "src-ai-v1",
+   "source_question_number": 104,
+   "source_page": 1,
+   "year": null,
+   "section": "A",
+   "points": 3,
+   "topic": "spatial",
+   "stem": "How many squares are in the picture?",
+   "stem_vi": "Trong hình có bao nhiêu hình vuông?",
+   "image_url": "/question-images/ai/e5/q08.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Đếm hình vuông theo từng hàng để không bỏ sót: hàng 1 có 4, hàng 2 có 4, hàng 3 có 1.",
+    "Cộng lại: 4 + 4 + 1 = 9.",
+    "Mẹo: hình vuông dù bị xoay nghiêng hay lộn ngược vẫn là hình vuông."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (a_count_shapes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q09",
+   "canonical_hash": "ai-e5-q09",
+   "source_id": "src-ai-v1",
+   "source_question_number": 105,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "Scales 1 and 2 are balanced. How many circles must go on the right pan so that scale 3 balances too?",
+   "stem_vi": "Cân 1 và cân 2 đang thăng bằng. Cần đặt bao nhiêu hình tròn lên đĩa bên phải để cân 3 cũng thăng bằng?",
+   "image_url": "/question-images/ai/e5/q09.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Cân 1: 1 hình vuông nặng bằng 4 hình tròn.",
+    "Cân 2: 1 hình tam giác nặng bằng 2 hình vuông.",
+    "Đổi mỗi hình vuông thành 4 hình tròn: 2 hình vuông = 2 × 4 = 8 hình tròn.",
+    "Vậy 1 hình tam giác nặng bằng 8 hình tròn.",
+    "Mẹo: thay dần các hình nặng hơn bằng các hình nhỏ nhất."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_balance), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q10",
+   "canonical_hash": "ai-e5-q10",
+   "source_id": "src-ai-v1",
+   "source_question_number": 106,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "The red pen is longer than the blue. The yellow pen is shorter than the blue. The purple pen is longer than the red. The black pen is shorter than the purple but longer than the red. Which pen is the longest?",
+   "stem_vi": "Bút đỏ dài hơn bút xanh. Bút vàng ngắn hơn bút xanh. Bút tím dài hơn bút đỏ. Bút đen ngắn hơn bút tím nhưng dài hơn bút đỏ. Bút nào dài nhất?",
+   "image_url": null,
+   "correct_option": "A",
+   "explanation": [
+    "Tím > đen > đỏ (đen ngắn hơn tím nhưng dài hơn đỏ).",
+    "Đỏ > xanh > vàng.",
+    "Ghép lại: tím > đen > đỏ > xanh > vàng. Bút tím dài nhất."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_order), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Bút tím",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Bút đỏ",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bút xanh",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Bút vàng",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Bút đen",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q11",
+   "canonical_hash": "ai-e5-q11",
+   "source_id": "src-ai-v1",
+   "source_question_number": 107,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "Mum bakes 3 pizzas, each cut into 8 equal slices. 10 children each eat 2 slices. How many slices are left?",
+   "stem_vi": "Mẹ nướng 3 chiếc bánh pizza, mỗi chiếc cắt thành 8 miếng bằng nhau. Có 10 bạn nhỏ, mỗi bạn ăn 2 miếng. Hỏi còn lại bao nhiêu miếng bánh?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Số miếng bánh: 3 × 8 = 24 miếng.",
+    "10 bạn, mỗi bạn ăn 2 miếng: 10 × 2 = 20 miếng.",
+    "Còn lại: 24 − 20 = 4 miếng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_pizza), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "1",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "2",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q12",
+   "canonical_hash": "ai-e5-q12",
+   "source_id": "src-ai-v1",
+   "source_question_number": 108,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "Nam puts a border of small square tiles (orange) around a square. The picture shows the border around a square of side 2, using 12 tiles. How many tiles are needed for a square of side 7?",
+   "stem_vi": "Bạn Nam lát một đường viền bằng các viên gạch vuông nhỏ (màu cam) quanh một hình vuông. Hình vẽ cho thấy đường viền quanh hình vuông có cạnh dài 2 viên gạch, dùng 12 viên. Cần bao nhiêu viên gạch để lát đường viền quanh hình vuông có cạnh dài 7 viên gạch?",
+   "image_url": "/question-images/ai/e5/q12.svg",
+   "correct_option": "D",
+   "explanation": [
+    "Ở hình mẫu (cạnh 2): mỗi cạnh có 2 viên, 4 cạnh là 4 × 2 = 8 viên, thêm 4 viên ở 4 góc: 12 viên.",
+    "Với hình vuông cạnh 7: 4 × 7 = 28 viên dọc 4 cạnh, thêm 4 viên góc.",
+    "Tổng: 28 + 4 = 32 viên gạch.",
+    "Chú ý: đừng quên 4 viên ở các góc."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_border), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "28",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "30",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "31",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "32",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "49",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q13",
+   "canonical_hash": "ai-e5-q13",
+   "source_id": "src-ai-v1",
+   "source_question_number": 109,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "measurement",
+   "stem": "A rabbit eats either 5 carrots or 3 cabbages each day. Last week (7 days) it ate 9 cabbages. How many carrots did it eat?",
+   "stem_vi": "Chú thỏ chỉ ăn cà rốt hoặc bắp cải. Mỗi ngày chú ăn hoặc 5 củ cà rốt, hoặc 3 cây bắp cải. Tuần trước (7 ngày) chú ăn tất cả 9 cây bắp cải. Tuần trước chú ăn bao nhiêu củ cà rốt?",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Mỗi ngày ăn bắp cải thì ăn 3 cây. Cả tuần ăn 9 cây nên có 9 : 3 = 3 ngày ăn bắp cải.",
+    "Số ngày ăn cà rốt: 7 − 3 = 4 ngày.",
+    "Số cà rốt: 4 × 5 = 20 củ."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_rabbit), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "15",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "21",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "25",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "35",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q14",
+   "canonical_hash": "ai-e5-q14",
+   "source_id": "src-ai-v1",
+   "source_question_number": 110,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "logic",
+   "stem": "Each shape stands for a number; equal shapes are equal numbers. Which number replaces the “?”?",
+   "stem_vi": "Mỗi hình tượng trưng cho một số; các hình giống nhau là cùng một số. Số nào thay cho dấu “?”?",
+   "image_url": "/question-images/ai/e5/q14.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Dòng 1: 2 hình vuông = 10, nên 1 hình vuông = 5.",
+    "Dòng 2: 5 + hình tam giác = 13, nên hình tam giác = 13 − 5 = 8.",
+    "Dòng 3: 8 + 8 + 5 = 21."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_symbols), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "17",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "19",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "20",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "21",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q15",
+   "canonical_hash": "ai-e5-q15",
+   "source_id": "src-ai-v1",
+   "source_question_number": 111,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "arithmetic",
+   "stem": "How many numbers from 20 to 60 are written using only the digits 1, 2, 5? (Digits may repeat.)",
+   "stem_vi": "Có bao nhiêu số từ 20 đến 60 chỉ được viết bằng các chữ số 1, 2, 5? (Mỗi chữ số có thể dùng nhiều lần.)",
+   "image_url": null,
+   "correct_option": "B",
+   "explanation": [
+    "Liệt kê các số từ 20 đến 60 chỉ dùng chữ số 1, 2, 5: 21, 22, 25, 51, 52, 55.",
+    "Đếm được 6 số.",
+    "Mẹo: liệt kê theo hàng chục (chục 1, chục 2, ...) để không bỏ sót."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_digits), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q16",
+   "canonical_hash": "ai-e5-q16",
+   "source_id": "src-ai-v1",
+   "source_question_number": 112,
+   "source_page": 1,
+   "year": null,
+   "section": "B",
+   "points": 4,
+   "topic": "spatial",
+   "stem": "The table has 28 boxes (4 rows, 7 columns). After painting every box in row 2 and column A, column D, column G, how many boxes are not painted?",
+   "stem_vi": "Bảng có 28 ô (4 hàng, 7 cột). Sau khi tô màu tất cả các ô ở hàng 2 cùng với cột A, cột D và cột G, có bao nhiêu ô không được tô màu?",
+   "image_url": "/question-images/ai/e5/q16.svg",
+   "correct_option": "E",
+   "explanation": [
+    "Các ô không bị tô phải nằm ở hàng không tô và cột không tô.",
+    "Số hàng không tô: 4 − 1 = 3; số cột không tô: 7 − 3 = 4.",
+    "Số ô không tô: 3 × 4 = 12.",
+    "Chú ý: ô nằm ở chỗ giao nhau của hàng và cột được tô chỉ tính một lần."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (b_paint), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q17",
+   "canonical_hash": "ai-e5-q17",
+   "source_id": "src-ai-v1",
+   "source_question_number": 113,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "Bi walks from the entrance to the exit through the rooms (gaps in the walls are doors), visiting each room at most once and adding the numbers in the rooms. What is the largest possible total?",
+   "stem_vi": "Bé Bi đi từ cửa Vào đến cửa Ra qua các căn phòng. Hai phòng cạnh nhau chỉ thông nhau khi trên bức tường giữa chúng có chỗ hở (cửa). Mỗi phòng chỉ được đi qua một lần, và Bi cộng các số ở những phòng đã đi qua. Tổng lớn nhất Bi có thể được là bao nhiêu?",
+   "image_url": "/question-images/ai/e5/q17.svg",
+   "correct_option": "A",
+   "explanation": [
+    "Chỉ đi được qua những chỗ hở trên tường (cửa). Mỗi phòng chỉ đi qua một lần.",
+    "Tổng tất cả các phòng là 41, nhưng không có đường nào đi qua hết mọi phòng.",
+    "Đường tốt nhất: 4 → 3 → 8 → 1 → 6 → 5 → 3, bỏ qua phòng 9, 2.",
+    "Tổng lớn nhất: 4 + 3 + 8 + 1 + 6 + 5 + 3 = 30."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_rooms), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "30",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "31",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "32",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "33",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "41",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q18",
+   "canonical_hash": "ai-e5-q18",
+   "source_id": "src-ai-v1",
+   "source_question_number": 114,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Three frogs live in a pond. Each night exactly one frog sings to the other two. After 11 nights one frog has sung 4 times and another has listened to 7 songs. How many songs has the third frog listened to?",
+   "stem_vi": "Ba chú ếch sống trong một cái ao. Mỗi đêm, đúng một chú ếch hát một bài cho hai chú kia nghe. Sau 11 đêm, một chú ếch đã hát 4 lần, một chú khác đã nghe 7 bài hát. Chú ếch thứ ba đã nghe bao nhiêu bài hát?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Mỗi đêm có 1 chú hát, 2 chú nghe. Một chú nghe bài hát vào mọi đêm mà chú không hát.",
+    "Chú thứ hai nghe 7 bài nên chú hát 11 − 7 = 4 đêm.",
+    "Chú thứ nhất hát 4 đêm, nên chú thứ ba hát 11 − 4 − 4 = 3 đêm.",
+    "Chú thứ ba nghe vào các đêm còn lại: 11 − 3 = 8 bài."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_frogs), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q19",
+   "canonical_hash": "ai-e5-q19",
+   "source_id": "src-ai-v1",
+   "source_question_number": 115,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "spatial",
+   "stem": "How many triangles are there in the picture?",
+   "stem_vi": "Có bao nhiêu hình tam giác trong hình vẽ?",
+   "image_url": "/question-images/ai/e5/q19.svg",
+   "correct_option": "B",
+   "explanation": [
+    "Từ đỉnh trên có 3 đường đi xuống. Hai đường bất kỳ trong số đó cùng với một đường nằm ngang tạo thành một hình tam giác.",
+    "Số cách chọn 2 đường từ 3 đường: 2 + 1 + ... + 1 = 3.",
+    "Có 3 đường nằm ngang (kể cả cạnh đáy), nên có 3 × 3 = 9 hình tam giác.",
+    "Mẹo: đếm có hệ thống – tam giác nhỏ, rồi tam giác ghép từ 2, 3 phần..."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_triangles), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "9",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "11",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q20",
+   "canonical_hash": "ai-e5-q20",
+   "source_id": "src-ai-v1",
+   "source_question_number": 116,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "John and Mai swap sweets. First John gives Mai as many sweets as Mai has. Then Mai gives John as many as John has. In the end John has 12 and Mai has 10. How many sweets did John have at the start?",
+   "stem_vi": "John và Mai trao đổi kẹo. Đầu tiên John cho Mai số kẹo bằng số kẹo Mai đang có. Sau đó Mai cho John số kẹo bằng số kẹo John đang có. Cuối cùng John có 12 viên và Mai có 10 viên. Lúc đầu John có bao nhiêu viên kẹo?",
+   "image_url": null,
+   "correct_option": "E",
+   "explanation": [
+    "Đi ngược từ cuối lên đầu.",
+    "Lần 2: Mai cho John số kẹo bằng số kẹo John đang có, tức là John được gấp đôi. Trước lần 2: John có 12 : 2 = 6, Mai có 10 + 6 = 16.",
+    "Lần 1: John cho Mai số kẹo bằng số kẹo Mai đang có, tức là Mai được gấp đôi. Trước lần 1: Mai có 16 : 2 = 8, John có 6 + 8 = 14.",
+    "Lúc đầu John có 14 viên, Mai có 8 viên. Kiểm tra lại theo chiều xuôi là đúng."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_candy), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "10",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "12",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "13",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "14",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q21",
+   "canonical_hash": "ai-e5-q21",
+   "source_id": "src-ai-v1",
+   "source_question_number": 117,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "measurement",
+   "stem": "A snail climbs a 15 m wall: up 5 m each day, down 3 m each night. Starting at the bottom on the morning of day 1, on which day does it reach the top?",
+   "stem_vi": "Một con ốc sên bò lên một bức tường cao 15 m. Ban ngày ốc bò lên được 5 m, ban đêm ốc tụt xuống 3 m. Bắt đầu từ chân tường vào sáng ngày thứ nhất, ốc lên tới đỉnh tường vào ngày thứ mấy?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Mỗi ngày ốc lên 5 m, mỗi đêm tụt 3 m. Nhưng ngày cuối cùng chạm đỉnh là xong, không tụt nữa.",
+    "Theo dõi từng ngày: ngày 1: lên 5 m, đêm tụt còn 2 m; ngày 2: lên 7 m, đêm tụt còn 4 m; ngày 3: lên 9 m, đêm tụt còn 6 m; ngày 4: lên 11 m, đêm tụt còn 8 m; ngày 5: lên 13 m, đêm tụt còn 10 m; ngày 6: bò lên tới 15 m, chạm đỉnh.",
+    "Ốc lên tới đỉnh vào ngày thứ 6 (không phải 15 : 2 = 8)."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_snail), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "3",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q22",
+   "canonical_hash": "ai-e5-q22",
+   "source_id": "src-ai-v1",
+   "source_question_number": 118,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "Nam writes the numbers 1 to 12 on the board, erases some, and adds the rest to get 30. At most how many numbers are left?",
+   "stem_vi": "Nam viết các số từ 1 đến 12 lên bảng. Nam xóa đi một số số rồi cộng các số còn lại, được tổng bằng 30. Trên bảng còn lại nhiều nhất bao nhiêu số?",
+   "image_url": null,
+   "correct_option": "D",
+   "explanation": [
+    "Muốn còn lại nhiều số nhất thì phải giữ các số nhỏ nhất.",
+    "Nếu giữ 8 số thì tổng nhỏ nhất là 1 + 2 + ... + 8 = 36 > 30, không được.",
+    "Giữ 7 số được: ví dụ 1 + 2 + 3 + 4 + 5 + 6 + 9 = 30.",
+    "Vậy còn lại nhiều nhất 7 số."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_erase), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "4",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "5",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "6",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "7",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "8",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q23",
+   "canonical_hash": "ai-e5-q23",
+   "source_id": "src-ai-v1",
+   "source_question_number": 119,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "logic",
+   "stem": "Phuc, Quan, Son, Tam and Uyen share a birthday; each cake shows the child's age. Phuc is 2 years younger than Quan. Son is 2 years older than Quan. Tam is older than Uyen. Which cake is Uyen's?",
+   "stem_vi": "Năm bạn Phúc, Quân, Sơn, Tâm, Uyên có cùng ngày sinh nhật; mỗi bạn có một chiếc bánh với cây nến ghi số tuổi. Phúc kém Quân 2 tuổi. Sơn hơn Quân 2 tuổi. Tâm lớn tuổi hơn Uyên. Bánh nào là của Uyên?",
+   "image_url": "/question-images/ai/e5/q23.svg",
+   "correct_option": "C",
+   "explanation": [
+    "Phúc, Quân, Sơn cách nhau đều 2 tuổi: Quân − 2, Quân, Quân + 2. Với các tuổi 6 đến 10 chỉ có thể là 6, 8, 10.",
+    "Còn lại 7 và 9 cho Tâm và Uyên. Tâm lớn hơn Uyên nên Tâm 9 tuổi, Uyên 7 tuổi.",
+    "Bánh của Uyên có số 7."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_age_cakes), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "Bánh A",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "Bánh B",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "Bánh C",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "Bánh D",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "Bánh E",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  },
+  {
+   "id": "ai-e5-q24",
+   "canonical_hash": "ai-e5-q24",
+   "source_id": "src-ai-v1",
+   "source_question_number": 120,
+   "source_page": 1,
+   "year": null,
+   "section": "C",
+   "points": 5,
+   "topic": "arithmetic",
+   "stem": "A farm has only sheep and cows. There are half as many cows as sheep, and 9 more sheep than cows. How many animals are there?",
+   "stem_vi": "Trang trại chỉ có cừu và bò. Số bò bằng một nửa số cừu, và cừu nhiều hơn bò 9 con. Trang trại có tất cả bao nhiêu con?",
+   "image_url": null,
+   "correct_option": "C",
+   "explanation": [
+    "Nếu bò là 1 phần thì cừu là 2 phần; cừu nhiều hơn 2 − 1 = 1 phần.",
+    "1 phần bằng 9 con, nên 1 phần là 9 : 1 = 9 con.",
+    "Bò: 9 con, cừu: 18 con. Tất cả: 9 + 18 = 27 con."
+   ],
+   "status": "published",
+   "answer_verified": true,
+   "answer_source": "AI generate: đáp án tính bằng code (c_ratio_diff), đã kiểm tra lại bằng lời giải độc lập",
+   "origin": "ai",
+   "options": [
+    {
+     "key": "A",
+     "text": "18",
+     "image_url": null,
+     "sort_order": 1
+    },
+    {
+     "key": "B",
+     "text": "25",
+     "image_url": null,
+     "sort_order": 2
+    },
+    {
+     "key": "C",
+     "text": "27",
+     "image_url": null,
+     "sort_order": 3
+    },
+    {
+     "key": "D",
+     "text": "28",
+     "image_url": null,
+     "sort_order": 4
+    },
+    {
+     "key": "E",
+     "text": "36",
+     "image_url": null,
+     "sort_order": 5
+    }
+   ]
+  }
+ ]
+}
