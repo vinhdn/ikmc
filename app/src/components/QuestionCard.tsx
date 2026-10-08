@@ -77,7 +77,9 @@ export default function QuestionCard({
         </div>
       )}
 
-      <div className="options-grid scan-answer-grid">
+      {/* Official scans already show option content inside the image, so only the letter is shown.
+          AI-generated questions draw the figure only; their option text must stay visible. */}
+      <div className={`options-grid scan-answer-grid${question.origin === 'ai' ? ' show-option-text' : ''}`}>
         {question.options.map((option) => {
           let className = 'option-btn';
           if (reveal) {

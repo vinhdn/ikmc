@@ -890,6 +890,21 @@ h3 {
 .scan-answer-grid .option-btn > span:last-of-type {
   display: none;
 }
+.scan-answer-grid.show-option-text {
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+}
+.scan-answer-grid.show-option-text .option-btn {
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+.scan-answer-grid.show-option-text .option-btn > span:last-of-type {
+  display: block;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
 .api-error {
   background: var(--danger-soft);
   border: 2px solid #fecdd3;

@@ -24,7 +24,7 @@ services:
       - app-network
 
   web:
-    image: ikmc-lop2:2.4.0
+    image: ikmc-lop2:2.4.1
     build:
       context: ..
       dockerfile: Dockerfile
